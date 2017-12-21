@@ -1,13 +1,21 @@
 """
 setup.py for ClassificaIO package
 """
-from distutils.core import setup
+from setuptools import setup, find_packages
+def readme():
+
+here = path.abspath(path.dirname(__file__))
+
+# Get the long description from the README file
+with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+    long_description = f.read()
 
 setup(
     name='ClassificaIO',
-    packages=['ClassificaIO'],
+    packages=find_packages(),
     version='1.0.0',
     description='Graphical User Interface for machine learning classification algorithms from scikit-learn',
+    long_description=long_description,,
     author='G. Mias Lab',
     author_email='gmiaslab@gmail.com',
     license='MIT',
