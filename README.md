@@ -28,13 +28,14 @@ After installation you can run:
 ```
 ## C. DOCUMENTATION
 Documentation for ClassificaIO is provided in the manual, available online at:
-https://github.com/gmiaslab/manuals/ClassificaIO/ClassificaIO_UserManual.pdf
+* https://github.com/gmiaslab/manuals/blob/master/ClassificaIO/ClassificaIO_UserManual.pdf
+
 The manual can also be accessed directly through the Help menu in ClassificaIO that points to the above location.
 
 ## D. LICENSING
 ClassificaIO is provided under an MIT license
 
-## C. OTHER CONTACT INFORMATION
+## E. OTHER CONTACT INFORMATION
 * Contributions:
 Raeuf Roushangar,
 George I. Mias
