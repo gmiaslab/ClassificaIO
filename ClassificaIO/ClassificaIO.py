@@ -5,7 +5,6 @@
 #==============================================================================
 # Dependencies
 #==============================================================================
-
 #========
 # tkinter
 #========
@@ -24,7 +23,7 @@ from decimal import Decimal
 import sys
 import numpy as np
 import csv
-
+from os import path
 #======
 #Fonts
 #======
@@ -202,7 +201,9 @@ def NavigationButtons(self,
     mainframe = tk.Frame(self)
     
     # home button
-    load_image = Image.open("go_home.png")
+    here=path.abspath(path.dirname(__file__))
+    homePath=path.join(here,"go_home.png")
+    load_image = Image.open(homePath)
     load_image = load_image.resize((15, 15), Image.ANTIALIAS)
     render_image = ImageTk.PhotoImage(load_image)
     home_button = ttk.Button(mainframe, image = render_image, command = home)
@@ -378,7 +379,9 @@ class StartWindow(tk.Frame):
         
         
         #lab logo
-        upload_logo = Image.open("logo_Lab_round.png")
+        here=path.abspath(path.dirname(__file__))
+        logoPath=path.join(here,"logo_Lab_round.png")
+        upload_logo = Image.open(logoPath)
         resized_logo = upload_logo.resize((150, 150), Image.ANTIALIAS)
         photoimage_logo = ImageTk.PhotoImage(resized_logo)
         labeled_logo = tk.Label(logo_and_ClassificaIO_name_frame, 
@@ -20786,8 +20789,8 @@ def center(toplevel):
     toplevel.geometry("%dx%d+%d+%d" % (size + (x, y)))
 
 
-# Code to run ClassificaIO script and center tkinter window 
-
-software = ClassificaIO()
-center(software)
-software.mainloop()
+# Code to run ClassificaIO script and center tkinter window
+def ClassificaIOGui():
+    software = ClassificaIO()
+    center(software)
+    software.mainloop()

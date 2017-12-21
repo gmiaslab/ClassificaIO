@@ -32,7 +32,6 @@ setup(
         'Operating System :: MacOS',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: Unix',
-        'Topic :: Research',
         'Topic :: Education',
         'Topic :: Utilities',
         ],

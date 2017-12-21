@@ -24,7 +24,8 @@ pip install git+https://github.com/gmiaslab/ClassificaIO/
 After installation you can run:
 
 ```python
->>> import ClassificaIO
+>>> from ClassificaIO import ClassificaIO
+>>> ClassificaIOgui()
 ```
 ## C. DOCUMENTATION
 Documentation for ClassificaIO is provided in the manual, available online at:

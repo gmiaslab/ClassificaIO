@@ -40,7 +40,8 @@ After installation you can run:
 
 .. code:: python
 
-    >>> import ClassificaIO
+    >>> from ClassificaIO import ClassificaIO
+    >>> ClassificaIOgui()
 
 C. DOCUMENTATION
 ----------------
