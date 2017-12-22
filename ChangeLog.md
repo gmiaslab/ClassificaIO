@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.0.4
+* SGD classifier parameter typo fix
+
 ## 1.0.3
 * Updated SGD classifier parameters for overlap bug between input variables
 * Updated code comments
