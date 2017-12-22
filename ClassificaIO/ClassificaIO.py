@@ -184,7 +184,7 @@ class ClassificaIO(tk.Tk):
 
 
 #==============================================================================
-############## Functions Used in All of Fallowing Classes Starts ##############
+############## Functions Used in All of Following Classes Starts ##############
 
 
 
