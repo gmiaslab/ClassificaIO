@@ -4866,7 +4866,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.Label(SGD_learning_rate_Frame, text="learning_rate:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side= "left",anchor ="c")
                         SGD_learning_rate = StringVar()
                         SGD_learning_rate.set("optimal")
-                        tk.OptionMenu(SGD_learning_rate_Frame, SGD_learning_weight, "optimal","invscaling", "constant").pack(side="right",anchor ="c")
+                        tk.OptionMenu(SGD_learning_rate_Frame, SGD_learning_rate, "optimal","invscaling", "constant").pack(side="right",anchor ="c")
                         SGD_learning_rate_Frame.pack(side="top",anchor ="w")
 
 
