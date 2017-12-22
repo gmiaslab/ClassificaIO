@@ -20790,7 +20790,7 @@ def center(toplevel):
 
 
 # Code to run ClassificaIO script and center tkinter window
-def ClassificaIOGui():
+def gui():
     software = ClassificaIO()
     center(software)
     software.mainloop()

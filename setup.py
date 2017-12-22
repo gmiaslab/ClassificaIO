@@ -15,6 +15,7 @@ setup(
     version='1.0.1',
     description='Graphical User Interface for machine learning classification algorithms from scikit-learn',
     long_description=long_description,
+    include_package_data=True,
     author='G. Mias Lab',
     author_email='gmiaslab@gmail.com',
     license='MIT',

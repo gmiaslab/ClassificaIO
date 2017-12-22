@@ -25,7 +25,7 @@ After installation you can run:
 
 ```python
 >>> from ClassificaIO import ClassificaIO
->>> ClassificaIOgui()
+>>> ClassificaIO.gui()
 ```
 ## C. DOCUMENTATION
 Documentation for ClassificaIO is provided in the manual, available online at:
