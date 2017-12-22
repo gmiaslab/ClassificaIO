@@ -19,7 +19,7 @@ setup(
     author_email='gmiaslab@gmail.com',
     license='MIT',
     url='https://github.com/gmiaslab/ClassificaIO',
-    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.0.0.tar.gz',
+    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.0.1.tar.gz',
     keywords=['machine learning', 'classification','bioinformatics'],
     classifiers=[
         'License :: OSI Approved :: MIT License',
