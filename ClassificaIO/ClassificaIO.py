@@ -1667,7 +1667,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         LR_random_state_int_or_none_frame = tk.Frame(LogisticRegressionParameters_Frame)
 
                         tk.Label(LR_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -1693,7 +1693,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         LR_penalty_multi_class_solver_Frame = tk.Frame(LogisticRegressionParameters_Frame)
                         
-                        # declear penalty parameter, str = l1 or l2, default: l2
+                        # declare penalty parameter, str = l1 or l2, default: l2
                         LR_penalty_Frame = tk.Frame(LR_penalty_multi_class_solver_Frame)
                         tk.Label(LR_penalty_Frame, text="penalty:", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         LR_penalty = StringVar()
@@ -1701,7 +1701,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(LR_penalty_Frame, LR_penalty, "l1", "l2").pack(side="right",anchor ="c")
                         LR_penalty_Frame.pack(side="top",anchor ="w")
                         
-                        # declear multi_class parameter
+                        # declare multi_class parameter
                         LR_multi_class_Frame = tk.Frame(LR_penalty_multi_class_solver_Frame)
                         tk.Label(LR_multi_class_Frame, text="multi_class:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side= "left",anchor ="c")
                         LR_multi_class = StringVar() 
@@ -1709,7 +1709,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(LR_multi_class_Frame, LR_multi_class, "ovr", "multinomial").pack(side="right",anchor ="c")                        
                         LR_multi_class_Frame.pack(side="top",anchor ="w")
 
-                        # declear solver parameter
+                        # declare solver parameter
                         LR_solver_Frame = tk.Frame(LR_penalty_multi_class_solver_Frame)
                         tk.Label(LR_solver_Frame, text="solver:  ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         LR_solver = StringVar() 
@@ -1725,7 +1725,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains intercept_scaling, max_iter, and tol parameters
                         LR_intercept_scaling_max_iter_tol_Frame = tk.Frame(LogisticRegressionParameters_Frame)
 
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         LR_max_iter_Frame = tk.Frame(LR_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LR_max_iter_Frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LR_max_iter = IntVar() 
@@ -1733,7 +1733,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LR_max_iter.set(100) 
                         LR_max_iter_Frame.pack(side="top", anchor ="w")
 
-                        # declear tol parameter 
+                        # declare tol parameter
                         LR_tol_Frame = tk.Frame(LR_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LR_tol_Frame, text="tol:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LR_tol = DoubleVar()
@@ -1741,7 +1741,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LR_tol.set("{:.1E}".format(Decimal(0.0001)))
                         LR_tol_Frame.pack(side="top", anchor ="w")
                                         
-                        # declear intercept_scaling parameter
+                        # declare intercept_scaling parameter
                         LR_intercept_scaling_Frame = tk.Frame(LR_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LR_intercept_scaling_Frame, text="intercept_scaling:", font=FONT_12, fg = 'SteelBlue3', wraplength=45).pack(side="left",anchor ="c")
                         LR_intercept_scaling = DoubleVar() 
@@ -1757,7 +1757,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains verbose, n_jobs, and C parameters
                         LR_verbose_n_jobs_C_Frame = tk.Frame(LogisticRegressionParameters_Frame)
                     
-                        # declear verbose parameter
+                        # declare verbose parameter
                         LR_verbose_Frame = tk.Frame(LR_verbose_n_jobs_C_Frame)
                         tk.Label(LR_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LR_verbose = IntVar() 
@@ -1765,7 +1765,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LR_verbose.set(0) 
                         LR_verbose_Frame.pack(side="top", anchor ="w")
                         
-                        # declear verbose parameter
+                        # declare verbose parameter
                         LR_n_jobs_Frame = tk.Frame(LR_verbose_n_jobs_C_Frame)
                         tk.Label(LR_n_jobs_Frame, text="n_jobs:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LR_n_jobs = IntVar() 
@@ -1773,7 +1773,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LR_n_jobs.set(1) 
                         LR_n_jobs_Frame.pack(side="top", anchor ="w")
                                         
-                        # declear C parameter
+                        # declare C parameter
                         LR_C_Frame = tk.Frame(LR_verbose_n_jobs_C_Frame)
                         tk.Label(LR_C_Frame, text="C:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LR_C = DoubleVar() 
@@ -1787,7 +1787,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
 
                                         
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         LR_fit_intercept_Frame = tk.Frame(LogisticRegressionParameters_Frame)
                         tk.Label(LR_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         LR_fit_intercept = BooleanVar()
@@ -1799,7 +1799,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################  
                                         
-                        # declear dual parameter, bool = default: False
+                        # declare dual parameter, bool = default: False
                         LR_dual_Frame = tk.Frame(LogisticRegressionParameters_Frame)
                         tk.Label(LR_dual_Frame, text="dual:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         LR_dual = BooleanVar()
@@ -1811,7 +1811,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         LR_warm_start_Frame = tk.Frame(LogisticRegressionParameters_Frame)
                         tk.Label(LR_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         LR_warm_start = BooleanVar()
@@ -1828,7 +1828,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
               ###########################################
               
-                        # declear Logistic Regression classifier result 
+                        # declare Logistic Regression classifier result
                         LogisticRegression_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -2469,7 +2469,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         PA_random_state_int_or_none_frame = tk.Frame(PassiveAggressiveParameters_Frame)
 
                         tk.Label(PA_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -2498,7 +2498,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         PA_max_iter_verbose_n_iter_n_jobs_C_Frame = tk.Frame(PassiveAggressiveParameters_Frame)
 
 
-                        # declear loss parameter, str = hinge or squared_hinge, default: hinge
+                        # declare loss parameter, str = hinge or squared_hinge, default: hinge
                         PA_loss_Frame = tk.Frame(PA_max_iter_verbose_n_iter_n_jobs_C_Frame)
                         tk.Label(PA_loss_Frame, text="loss:      ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         PA_loss = StringVar()
@@ -2507,7 +2507,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         PA_loss_Frame.pack(side="top", anchor ="w")
 
 
-                        # declear verbose parameter
+                        # declare verbose parameter
                         PA_verbose_Frame = tk.Frame(PA_max_iter_verbose_n_iter_n_jobs_C_Frame)
                         tk.Label(PA_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         PA_verbose = IntVar() 
@@ -2516,7 +2516,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         PA_verbose_Frame.pack(side="top", anchor ="w")
 
 
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         PA_n_jobs_Frame = tk.Frame(PA_max_iter_verbose_n_iter_n_jobs_C_Frame)
                         tk.Label(PA_n_jobs_Frame, text="n_jobs:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         PA_n_jobs = IntVar() 
@@ -2525,7 +2525,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         PA_n_jobs_Frame.pack(side="top", anchor ="w")
                                         
 
-                        # declear C parameter
+                        # declare C parameter
                         PA_C_Frame = tk.Frame(PA_max_iter_verbose_n_iter_n_jobs_C_Frame)
                         tk.Label(PA_C_Frame, text="C:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         PA_C = DoubleVar() 
@@ -2538,7 +2538,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                         
-                        # declear max_iter parameter, int or None, optional (default=None)
+                        # declare max_iter parameter, int or None, optional (default=None)
                         PA_max_iter_int_or_none_frame = tk.Frame(PassiveAggressiveParameters_Frame)
 
                         tk.Label(PA_max_iter_int_or_none_frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -2562,7 +2562,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear tol parameter, int or None, optional (default=None)
+                        # declare tol parameter, int or None, optional (default=None)
                         PA_tol_int_or_none_frame = tk.Frame(PassiveAggressiveParameters_Frame)
 
                         tk.Label(PA_tol_int_or_none_frame, text="tol:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -2587,7 +2587,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                         
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         PA_fit_intercept_Frame = tk.Frame(PassiveAggressiveParameters_Frame)
                         tk.Label(PA_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")                        
                         PA_fit_intercept = BooleanVar()
@@ -2599,7 +2599,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         PA_warm_start_Frame = tk.Frame(PassiveAggressiveParameters_Frame)
                         tk.Label(PA_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         PA_warm_start = BooleanVar()
@@ -2611,7 +2611,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear average parameter, bool or int
+                        # declare average parameter, bool or int
                         PA_average_MainFrame = tk.Frame(PassiveAggressiveParameters_Frame)
                         
                         tk.Label(PA_average_MainFrame, text="average:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -2640,7 +2640,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear LinearRegression classifier Result 
+                        # declare LinearRegression classifier Result
                         PassiveAggressive_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         # add some space above the submit button to maintain 
                         # parameters positions across classifiers
@@ -3270,7 +3270,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         #######################################################
 
                                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         Perceptron_random_state_int_or_none_frame = tk.Frame(PerceptronParameters_Frame)
 
                         tk.Label(Perceptron_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -3294,7 +3294,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear penalty parameter
+                        # declare penalty parameter
                         Perceptron_penalty_Frame = tk.Frame(PerceptronParameters_Frame)
                         tk.Label(Perceptron_penalty_Frame, text="penalty:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Perceptron_penalty = StringVar()
@@ -3306,7 +3306,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         Perceptron_verbose_n_jobs_alpha_eta0_Frame = tk.Frame(PerceptronParameters_Frame)
                         
-                        # declear verbose parameter
+                        # declare verbose parameter
                         Perceptron_verbose_Frame = tk.Frame(Perceptron_verbose_n_jobs_alpha_eta0_Frame)
                         tk.Label(Perceptron_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Perceptron_verbose = IntVar() 
@@ -3316,7 +3316,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         Perceptron_n_jobs_Frame = tk.Frame(Perceptron_verbose_n_jobs_alpha_eta0_Frame)
                         tk.Label(Perceptron_n_jobs_Frame, text="n_jobs:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Perceptron_n_jobs = IntVar() 
@@ -3327,7 +3327,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear alpha parameter
+                        # declare alpha parameter
                         Perceptron_alpha_Frame = tk.Frame(Perceptron_verbose_n_jobs_alpha_eta0_Frame)
                         tk.Label(Perceptron_alpha_Frame, text="alpha:    ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         Perceptron_alpha = DoubleVar() 
@@ -3338,7 +3338,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear eta0 parameter
+                        # declare eta0 parameter
                         Perceptron_eta0_Frame = tk.Frame(Perceptron_verbose_n_jobs_alpha_eta0_Frame)
                         tk.Label(Perceptron_eta0_Frame, text="eta0:      ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Perceptron_eta0 = DoubleVar() 
@@ -3353,7 +3353,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ################### 
                                         
                         
-                        # declear max_iter parameter, int or None, optional (default=None)
+                        # declare max_iter parameter, int or None, optional (default=None)
                         Perceptron_max_iter_int_or_none_frame = tk.Frame(PerceptronParameters_Frame)
 
                         tk.Label(Perceptron_max_iter_int_or_none_frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -3380,7 +3380,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         Perceptron_tol_fit_intercept_MainFrame = tk.Frame(PerceptronParameters_Frame)
                         
-                        # declear tol parameter, int or None, optional (default=None)
+                        # declare tol parameter, int or None, optional (default=None)
                         Perceptron_tol_int_or_none_frame = tk.Frame(Perceptron_tol_fit_intercept_MainFrame)
 
                         tk.Label(Perceptron_tol_int_or_none_frame, text="tol:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -3404,7 +3404,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         Perceptron_fit_intercept_Frame = tk.Frame(PerceptronParameters_Frame)
                         tk.Label(Perceptron_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Perceptron_fit_intercept = BooleanVar()
@@ -3418,7 +3418,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
 
-                        # declear warm_start parameter, bool = default: True
+                        # declare warm_start parameter, bool = default: True
                         Perceptron_warm_start_Frame = tk.Frame(PerceptronParameters_Frame)
                         tk.Label(Perceptron_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Perceptron_warm_start = BooleanVar()
@@ -3434,7 +3434,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Perceptron classifier Result 
+                        # declare Perceptron classifier Result
                         Perceptron_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -4043,7 +4043,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         #######################################################
 
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         Ridge_random_state_int_or_none_frame = tk.Frame(RidgeParameters_Frame)
 
                         tk.Label(Ridge_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -4067,7 +4067,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear solver parameter
+                        # declare solver parameter
                         Ridge_solver_Frame = tk.Frame(RidgeParameters_Frame)
                         tk.Label(Ridge_solver_Frame, text="solver:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Ridge_solver = StringVar()
@@ -4080,7 +4080,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         Ridge_alpha_tol_Frame = tk.Frame(RidgeParameters_Frame)             
                                         
-                        # declear alpha parameter
+                        # declare alpha parameter
                         Ridge_alpha_Frame = tk.Frame(Ridge_alpha_tol_Frame)
                         tk.Label(Ridge_alpha_Frame, text="alpha:", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         Ridge_alpha = DoubleVar() 
@@ -4088,7 +4088,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         Ridge_alpha.set(1) 
                         Ridge_alpha_Frame.pack(side= "top", anchor ="w")
                                         
-                        # declear tol parameter 
+                        # declare tol parameter
                         Ridge_tol_Frame = tk.Frame(Ridge_alpha_tol_Frame)
                         tk.Label(Ridge_tol_Frame, text="tol:     ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         Ridge_tol = DoubleVar()
@@ -4101,7 +4101,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear max_iter parameter, int or None, optional (default=None)
+                        # declare max_iter parameter, int or None, optional (default=None)
                         Ridge_max_iter_int_or_none_frame = tk.Frame(RidgeParameters_Frame)
 
                         tk.Label(Ridge_max_iter_int_or_none_frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -4126,7 +4126,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         Ridge_fit_intercept_Frame = tk.Frame(RidgeParameters_Frame)
                         tk.Label(Ridge_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Ridge_fit_intercept = BooleanVar()
@@ -4138,7 +4138,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ################### 
 
 
-                        # declear normalize parameter, bool = default: False
+                        # declare normalize parameter, bool = default: False
                         Ridge_normalize_Frame = tk.Frame(RidgeParameters_Frame)
                         tk.Label(Ridge_normalize_Frame, text="normalize:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Ridge_normalize = BooleanVar()
@@ -4149,7 +4149,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear copy_X parameter, bool = default: False
+                        # declare copy_X parameter, bool = default: False
                         Ridge_copy_X_Frame = tk.Frame(RidgeParameters_Frame)
                         tk.Label(Ridge_copy_X_Frame, text="copy_X:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Ridge_copy_X = BooleanVar()
@@ -4166,7 +4166,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Ridge classifier Result 
+                        # declare Ridge classifier Result
                         Ridge_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -4817,7 +4817,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         SGD_random_state_int_or_none_frame = tk.Frame(SGDParameters_Frame)
 
                         tk.Label(SGD_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -4844,7 +4844,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_loss_penalty_Frame = tk.Frame(SGDParameters_Frame)
 
 
-                        # declear penalty parameter
+                        # declare penalty parameter
                         SGD_penalty_Frame = tk.Frame(SGD_loss_penalty_Frame)
                         tk.Label(SGD_penalty_Frame, text="penalty:", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_penalty = StringVar()
@@ -4852,7 +4852,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(SGD_penalty_Frame, SGD_penalty, "none", "l2", "l1", "elasticnet").pack(side="right",anchor ="c")
                         SGD_penalty_Frame.pack(side="top",anchor ="w")
                         
-                        # declear class_weight parameter
+                        # declare class_weight parameter
                         SGD_class_weight_Frame = tk.Frame(SGD_loss_penalty_Frame)
                         tk.Label(SGD_class_weight_Frame, text="class_weight:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side= "left",anchor ="c")
                         SGD_class_weight = StringVar()
@@ -4861,16 +4861,16 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_class_weight_Frame.pack(side="top",anchor ="w")
 
 
-                        # declear learning_rate parameter
+                        # declare learning_rate parameter
                         SGD_learning_rate_Frame = tk.Frame(SGD_loss_penalty_Frame)
                         tk.Label(SGD_learning_rate_Frame, text="learning_rate:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side= "left",anchor ="c")
                         SGD_learning_rate = StringVar()
                         SGD_learning_rate.set("optimal")
-                        tk.OptionMenu(SGD_learning_rate_Frame, SGD_class_weight, "optimal","invscaling", "constant").pack(side="right",anchor ="c")
+                        tk.OptionMenu(SGD_learning_rate_Frame, SGD_learning_weight, "optimal","invscaling", "constant").pack(side="right",anchor ="c")
                         SGD_learning_rate_Frame.pack(side="top",anchor ="w")
 
 
-                        # declear loss parameter
+                        # declare loss parameter
                         SGD_loss_Frame = tk.Frame(SGD_loss_penalty_Frame)
                         tk.Label(SGD_loss_Frame, text="loss:    ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_loss = StringVar()
@@ -4886,7 +4886,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         SGD_alpha_l1_ratio_verbose_epsilon_frame = tk.Frame(SGDParameters_Frame)
                         
-                        # declear alpha parameter
+                        # declare alpha parameter
                         SGD_alpha_Frame = tk.Frame(SGD_alpha_l1_ratio_verbose_epsilon_frame)
                         tk.Label(SGD_alpha_Frame, text="alpha:    ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_alpha = DoubleVar()
@@ -4895,7 +4895,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_alpha_Frame.pack(side="top",anchor ="w")
                         
                         
-                        # declear l1_ratio parameter
+                        # declare l1_ratio parameter
                         SGD_l1_ratio_Frame = tk.Frame(SGD_alpha_l1_ratio_verbose_epsilon_frame)
                         tk.Label(SGD_l1_ratio_Frame, text="l1_ratio: ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_l1_ratio = DoubleVar()
@@ -4903,7 +4903,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_l1_ratio.set(0.15) 
                         SGD_l1_ratio_Frame.pack(side="top",anchor ="w")
                         
-                        # declear verbose parameter
+                        # declare verbose parameter
                         SGD_verbose_Frame = tk.Frame(SGD_alpha_l1_ratio_verbose_epsilon_frame)
                         tk.Label(SGD_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         SGD_verbose = IntVar() 
@@ -4911,7 +4911,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_verbose.set(0)
                         SGD_verbose_Frame.pack(side="top",anchor ="w")
                         
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         SGD_n_jobs_Frame = tk.Frame(SGD_alpha_l1_ratio_verbose_epsilon_frame)
                         tk.Label(SGD_n_jobs_Frame, text="n_jobs:  ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_n_jobs = IntVar()
@@ -4919,7 +4919,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_n_jobs.set(1) 
                         SGD_n_jobs_Frame.pack(side="top",anchor ="w")
                         
-                        # declear epsilon parameter
+                        # declare epsilon parameter
                         SGD_epsilon_Frame = tk.Frame(SGD_alpha_l1_ratio_verbose_epsilon_frame)
                         tk.Label(SGD_epsilon_Frame, text="epsilon: ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         SGD_epsilon = DoubleVar()
@@ -4934,7 +4934,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
             
                         SGD_n_jobs_eta0_power_t_n_iter_frame = tk.Frame(SGDParameters_Frame)
 
-                        # declear power_t parameter
+                        # declare power_t parameter
                         SGD_power_t_Frame = tk.Frame(SGD_n_jobs_eta0_power_t_n_iter_frame)
                         tk.Label(SGD_power_t_Frame, text="power_t:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         SGD_power_t = DoubleVar() 
@@ -4945,7 +4945,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         
                         
-                        # declear eta0 parameter
+                        # declare eta0 parameter
                         SGD_eta0_Frame = tk.Frame(SGD_n_jobs_eta0_power_t_n_iter_frame)
                         tk.Label(SGD_eta0_Frame, text="eta0:      ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         SGD_eta0 = DoubleVar() 
@@ -4954,7 +4954,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_eta0_Frame.pack(side="top",anchor ="w")
                         
 
-                        # declear average parameter, bool or int
+                        # declare average parameter, bool or int
                         SGD_average_MainFrame = tk.Frame(SGD_n_jobs_eta0_power_t_n_iter_frame)
                         
                         tk.Label(SGD_average_MainFrame, text="average:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -4984,7 +4984,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_max_iter_warm_start_frame = tk.Frame(SGDParameters_Frame)
 
                                         
-                        # declear max_iter parameter, int or None, optional (default=None)
+                        # declare max_iter parameter, int or None, optional (default=None)
                         SGD_max_iter_int_or_none_frame = tk.Frame(SGD_max_iter_warm_start_frame)
 
                         tk.Label(SGD_max_iter_int_or_none_frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -5007,7 +5007,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
 
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         SGD_warm_start_Frame = tk.Frame(SGD_max_iter_warm_start_frame)
                         tk.Label(SGD_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         SGD_warm_start = BooleanVar()
@@ -5024,7 +5024,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         SGD_tol_and_fit_intercept_Frame = tk.Frame(SGDParameters_Frame)
                                         
-                        # declear tol parameter, int or None, optional (default=None)
+                        # declare tol parameter, int or None, optional (default=None)
                         SGD_tol_int_or_none_frame = tk.Frame(SGD_tol_and_fit_intercept_Frame)
 
                         tk.Label(SGD_tol_int_or_none_frame, text="tol:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -5047,7 +5047,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         SGD_tol_int_or_none_frame.pack(side="top",anchor ="w")
                         
                         tk.Label(SGD_tol_and_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         SGD_fit_intercept_Frame = tk.Frame(SGD_tol_and_fit_intercept_Frame)
                         SGD_fit_intercept = BooleanVar()
                         tk.Radiobutton(SGD_fit_intercept_Frame, text= "True", variable = SGD_fit_intercept, value = True, justify='left').pack(anchor ="c")                        
@@ -5067,7 +5067,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Stochastic Gradient Descent - SGD classifier 
+                        # declare Stochastic Gradient Descent - SGD classifier
                         # Result 
                         SGD_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
@@ -5674,7 +5674,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         Linear_DA_random_state_int_or_none_frame = tk.Frame(Linear_DAParameters_Frame)
 
                         tk.Label(Linear_DA_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -5699,7 +5699,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
 
 
-                        # declear solver parameter
+                        # declare solver parameter
                         Linear_DA_solver_Frame = tk.Frame(Linear_DAParameters_Frame)
                         tk.Label(Linear_DA_solver_Frame, text="solver:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Linear_DA_solver = StringVar()
@@ -5710,7 +5710,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear tol parameter
+                        # declare tol parameter
                         Linear_DA_tol_Frame = tk.Frame(Linear_DAParameters_Frame)
                         tk.Label(Linear_DA_tol_Frame, text="tol:      ", font=FONT_12, fg = 'SteelBlue3').pack(anchor ="c")
                         Linear_DA_tol = DoubleVar() 
@@ -5721,7 +5721,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ################### 
 
 
-                        # declear n_components parameter, int or None, optional (default=None)
+                        # declare n_components parameter, int or None, optional (default=None)
                         Linear_DA_n_components_int_or_none_frame = tk.Frame(Linear_DAParameters_Frame)
 
                         tk.Label(Linear_DA_n_components_int_or_none_frame, text="n_components:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -5744,7 +5744,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear store_covariance parameter, bool = default: False
+                        # declare store_covariance parameter, bool = default: False
                         Linear_DA_store_covariance_Frame = tk.Frame(Linear_DAParameters_Frame)
                         tk.Label(Linear_DA_store_covariance_Frame, text="store_covariance:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Linear_DA_store_covariance = BooleanVar()
@@ -5761,7 +5761,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear LinearDiscriminantAnalysis classifier result 
+                        # declare LinearDiscriminantAnalysis classifier result
                         Linear_DA_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -6360,7 +6360,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         Quadratic_DA_random_state_int_or_none_frame = tk.Frame(Quadratic_DAParameters_Frame)
 
                         tk.Label(Quadratic_DA_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -6384,7 +6384,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                         
-                        # declear reg_param parameter
+                        # declare reg_param parameter
                         Quadratic_DA_reg_param_Frame = tk.Frame(Quadratic_DAParameters_Frame)
                         tk.Label(Quadratic_DA_reg_param_Frame, text="reg_param:", font=FONT_12, fg = 'SteelBlue3').pack(anchor ="c")
                         Quadratic_DA_reg_param = DoubleVar() 
@@ -6395,7 +6395,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear tol parameter
+                        # declare tol parameter
                         Quadratic_DA_tol_Frame = tk.Frame(Quadratic_DAParameters_Frame)
                         tk.Label(Quadratic_DA_tol_Frame, text="tol:", font=FONT_12, fg = 'SteelBlue3').pack(anchor ="c")
                         Quadratic_DA_tol = DoubleVar() 
@@ -6406,7 +6406,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear store_covariance parameter, bool = default: False
+                        # declare store_covariance parameter, bool = default: False
                         Quadratic_DA_store_covariance_Frame = tk.Frame(Quadratic_DAParameters_Frame)
                         tk.Label(Quadratic_DA_store_covariance_Frame, text="store_covariance:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Quadratic_DA_store_covariance = BooleanVar()
@@ -6423,7 +6423,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear QuadraticDiscriminantAnalysis classifier result 
+                        # declare QuadraticDiscriminantAnalysis classifier result
                         Quadratic_DA_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -7050,7 +7050,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         LinearSVC_random_state_int_or_none_frame = tk.Frame(LinearSVCParameters_Frame)
 
                         tk.Label(LinearSVC_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -7074,7 +7074,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                         LinearSVC_multi_class_penalty_loss_Frame = tk.Frame(LinearSVCParameters_Frame)
-                        # declear loss parameter
+                        # declare loss parameter
                         LinearSVC_loss_Frame = tk.Frame(LinearSVC_multi_class_penalty_loss_Frame)
                         tk.Label(LinearSVC_loss_Frame, text="loss:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         LinearSVC_loss = StringVar()    
@@ -7082,7 +7082,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(LinearSVC_loss_Frame, LinearSVC_loss, "squared_hinge", "hinge").pack(side="right",anchor ="c")
                         LinearSVC_loss_Frame.pack(side= "top",anchor ="w")
                         
-                        # declear multi_class parameter
+                        # declare multi_class parameter
                         LinearSVC_multi_class_Frame = tk.Frame(LinearSVC_multi_class_penalty_loss_Frame)
                         tk.Label(LinearSVC_multi_class_Frame, text="multi_class:",font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         LinearSVC_multi_class = StringVar() 
@@ -7090,7 +7090,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LinearSVC_multi_class.set("ovr") 
                         LinearSVC_multi_class_Frame.pack(side= "top",anchor ="w")
                                                 
-                        # declear penalty parameter, str = l1 or l2, default: l2
+                        # declare penalty parameter, str = l1 or l2, default: l2
                         LinearSVC_penalty_Frame = tk.Frame(LinearSVC_multi_class_penalty_loss_Frame)
                         tk.Label(LinearSVC_penalty_Frame, text="penalty:        ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         LinearSVC_penalty = StringVar()
@@ -7107,7 +7107,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains intercept_scaling, max_iter, and tol parameters
                         LinearSVC_intercept_scaling_max_iter_tol_Frame = tk.Frame(LinearSVCParameters_Frame)
 
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         LinearSVC_max_iter_Frame = tk.Frame(LinearSVC_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LinearSVC_max_iter_Frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LinearSVC_max_iter = IntVar() 
@@ -7115,7 +7115,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LinearSVC_max_iter.set(1000) 
                         LinearSVC_max_iter_Frame.pack(side="top", anchor ="w")
 
-                        # declear tol parameter 
+                        # declare tol parameter
                         LinearSVC_tol_Frame = tk.Frame(LinearSVC_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LinearSVC_tol_Frame, text="tol:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LinearSVC_tol = DoubleVar()
@@ -7123,7 +7123,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LinearSVC_tol.set("{:.1E}".format(Decimal(0.0001)))
                         LinearSVC_tol_Frame.pack(side="top", anchor ="w")
                                         
-                        # declear intercept_scaling parameter
+                        # declare intercept_scaling parameter
                         LinearSVC_intercept_scaling_Frame = tk.Frame(LinearSVC_intercept_scaling_max_iter_tol_Frame)
                         tk.Label(LinearSVC_intercept_scaling_Frame, text="intercept_scaling:", font=FONT_12, fg = 'SteelBlue3', wraplength=45).pack(side="left",anchor ="c")
                         LinearSVC_intercept_scaling = DoubleVar() 
@@ -7137,7 +7137,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains intercept_scaling, verbose, tol and C parameters
                         LinearSVC_verbose_C_Frame = tk.Frame(LinearSVCParameters_Frame)
                         
-                        # declear verbose parameter
+                        # declare verbose parameter
                         LinearSVC_verbose_Frame = tk.Frame(LinearSVC_verbose_C_Frame)
                         tk.Label(LinearSVC_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LinearSVC_verbose = IntVar() 
@@ -7145,7 +7145,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LinearSVC_verbose.set(0) 
                         LinearSVC_verbose_Frame.pack(side="top", anchor ="w")
                                         
-                        # declear C parameter
+                        # declare C parameter
                         LinearSVC_C_Frame = tk.Frame(LinearSVC_verbose_C_Frame)
                         tk.Label(LinearSVC_C_Frame, text="C:           ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LinearSVC_C = DoubleVar() 
@@ -7159,7 +7159,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         
   
-                        # declear dual parameter, bool = default: True
+                        # declare dual parameter, bool = default: True
                         LinearSVC_dual_Frame = tk.Frame(LinearSVCParameters_Frame)
                         tk.Label(LinearSVC_dual_Frame, text="dual:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         LinearSVC_dual = BooleanVar()
@@ -7171,7 +7171,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear fit_intercept parameter, bool = default: True
+                        # declare fit_intercept parameter, bool = default: True
                         LinearSVC_fit_intercept_Frame = tk.Frame(LinearSVCParameters_Frame)
                         tk.Label(LinearSVC_fit_intercept_Frame, text="fit_intercept:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         LinearSVC_fit_intercept = BooleanVar()
@@ -7185,7 +7185,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LinearSVCParameters_Frame.pack(anchor ="c")
 
               ###########################################
-                        # declear LinearSVC classifier result 
+                        # declare LinearSVC classifier result
                         LinearSVC_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -7802,7 +7802,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         NuSVC_random_state_int_or_none_frame = tk.Frame(NuSVCParameters_Frame)
 
                         tk.Label(NuSVC_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -7828,7 +7828,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         NuSVC_decision_function_shape_max_iter_tol_nu_Frame = tk.Frame(NuSVCParameters_Frame)
                         
-                        # declear decision_function_shape parameter
+                        # declare decision_function_shape parameter
                         NuSVC_decision_function_shape_Frame = tk.Frame(NuSVC_decision_function_shape_max_iter_tol_nu_Frame)
                         tk.Label(NuSVC_decision_function_shape_Frame, text="decision_function_shape:", font=FONT_12, fg = 'SteelBlue3', wraplength=65).pack(side="left",anchor="c")
                         NuSVC_decision_function_shape = StringVar()                       
@@ -7836,7 +7836,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(NuSVC_decision_function_shape_Frame, NuSVC_decision_function_shape, "ovr", "ovo").pack(side="right",anchor ="c")                        
                         NuSVC_decision_function_shape_Frame.pack(side= "top",anchor ="w")
                         
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         NuSVC_max_iter_Frame = tk.Frame(NuSVC_decision_function_shape_max_iter_tol_nu_Frame)
                         tk.Label(NuSVC_max_iter_Frame, text="max_iter:       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         NuSVC_max_iter = IntVar() 
@@ -7844,7 +7844,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         NuSVC_max_iter.set(-1) 
                         NuSVC_max_iter_Frame.pack(side="top",anchor ="w")
                         
-                        # declear tol parameter 
+                        # declare tol parameter
                         NuSVC_tol_Frame = tk.Frame(NuSVC_decision_function_shape_max_iter_tol_nu_Frame)
                         tk.Label(NuSVC_tol_Frame, text="tol:                 ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         NuSVC_tol = DoubleVar()
@@ -7852,7 +7852,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         NuSVC_tol.set("{:.1E}".format(Decimal(0.0001)))
                         NuSVC_tol_Frame.pack(side="top", anchor ="w")
                         
-                        # declear nu parameter
+                        # declare nu parameter
                         NuSVC_nu_Frame = tk.Frame(NuSVC_decision_function_shape_max_iter_tol_nu_Frame)
                         tk.Label(NuSVC_nu_Frame, text="nu:                 ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         NuSVC_nu = DoubleVar() 
@@ -7867,7 +7867,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         NuSVC_kernel_degree_coef0_cache_size_Frame = tk.Frame(NuSVCParameters_Frame)
 
-                        # declear kernel parameter
+                        # declare kernel parameter
                         NuSVC_kernel_Frame = tk.Frame(NuSVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(NuSVC_kernel_Frame, text="kernel:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         NuSVC_kernel = StringVar()                       
@@ -7875,7 +7875,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(NuSVC_kernel_Frame, NuSVC_kernel, "linear", "poly", "rbf", "sigmoid").pack(side="right",anchor ="c")                        
                         NuSVC_kernel_Frame.pack(side= "top",anchor ="w")
                                                                         
-                        # declear degree parameter
+                        # declare degree parameter
                         NuSVC_degree_Frame = tk.Frame(NuSVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(NuSVC_degree_Frame, text="degree:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         NuSVC_degree = IntVar() 
@@ -7883,7 +7883,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         NuSVC_degree.set(3) 
                         NuSVC_degree_Frame.pack(side="top",anchor ="w")  
                                         
-                        # declear coef0 parameter
+                        # declare coef0 parameter
                         NuSVC_coef0_Frame = tk.Frame(NuSVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(NuSVC_coef0_Frame, text="coef0:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         NuSVC_coef0 = DoubleVar() 
@@ -7892,7 +7892,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         NuSVC_coef0_Frame.pack(side="top",anchor ="w")
 
     
-                        # declear cache_size parameter
+                        # declare cache_size parameter
                         NuSVC_cache_size_Frame = tk.Frame(NuSVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(NuSVC_cache_size_Frame, text="cache_size:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side="left",anchor ="c")
                         NuSVC_cache_size = DoubleVar() 
@@ -7905,7 +7905,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear gamma parameter float or string, optional (default=”auto”)
+                        # declare gamma parameter float or string, optional (default=”auto”)
                         NuSVC_gamma_MainFrame = tk.Frame(NuSVCParameters_Frame)
                         
                         tk.Label(NuSVC_gamma_MainFrame, text="gamma:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -7933,7 +7933,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################  
 
 
-                        # declear probability parameter, bool = default: False
+                        # declare probability parameter, bool = default: False
                         NuSVC_probability_Frame = tk.Frame(NuSVCParameters_Frame)
                         tk.Label(NuSVC_probability_Frame, text="probability:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         NuSVC_probability = BooleanVar()
@@ -7943,7 +7943,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         NuSVC_probability_Frame.pack(side= "left",anchor ="n",padx =10)
                                         ###################
                                         ###################
-                        # declear shrinking parameter, bool = default: True
+                        # declare shrinking parameter, bool = default: True
                         NuSVC_shrinking_Frame = tk.Frame(NuSVCParameters_Frame)
                         tk.Label(NuSVC_shrinking_Frame, text="shrinking:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         NuSVC_shrinking = BooleanVar()
@@ -7954,7 +7954,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################  
                 
-                        # declear probability parameter, bool = default: False
+                        # declare probability parameter, bool = default: False
                         NuSVC_verbose_Frame = tk.Frame(NuSVCParameters_Frame)
                         tk.Label(NuSVC_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         NuSVC_verbose = BooleanVar()
@@ -7971,7 +7971,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear NuSVC classifier result 
+                        # declare NuSVC classifier result
                         NuSVC_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -8587,7 +8587,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         C_SVC_random_state_int_or_none_frame = tk.Frame(C_SVCParameters_Frame)
 
                         tk.Label(C_SVC_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -8613,7 +8613,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         C_SVC_decision_function_shape_max_iter_tol_C_Frame = tk.Frame(C_SVCParameters_Frame)
                         
-                        # declear decision_function_shape parameter
+                        # declare decision_function_shape parameter
                         C_SVC_decision_function_shape_Frame = tk.Frame(C_SVC_decision_function_shape_max_iter_tol_C_Frame)
                         tk.Label(C_SVC_decision_function_shape_Frame, text="decision_function_shape:", font=FONT_12, fg = 'SteelBlue3', wraplength=65).pack(side="left",anchor="c")
                         C_SVC_decision_function_shape = StringVar()                       
@@ -8621,7 +8621,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(C_SVC_decision_function_shape_Frame, C_SVC_decision_function_shape, "ovr", "ovo").pack(side="right",anchor ="c")                        
                         C_SVC_decision_function_shape_Frame.pack(side= "top",anchor ="w")
                         
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         C_SVC_max_iter_Frame = tk.Frame(C_SVC_decision_function_shape_max_iter_tol_C_Frame)
                         tk.Label(C_SVC_max_iter_Frame, text="max_iter:       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         C_SVC_max_iter = IntVar() 
@@ -8629,7 +8629,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         C_SVC_max_iter.set(-1) 
                         C_SVC_max_iter_Frame.pack(side="top",anchor ="w")
                         
-                        # declear tol parameter 
+                        # declare tol parameter
                         C_SVC_tol_Frame = tk.Frame(C_SVC_decision_function_shape_max_iter_tol_C_Frame)
                         tk.Label(C_SVC_tol_Frame, text="tol:                 ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         C_SVC_tol = DoubleVar()
@@ -8637,7 +8637,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         C_SVC_tol.set("{:.1E}".format(Decimal(0.001)))
                         C_SVC_tol_Frame.pack(side="top", anchor ="w")
                         
-                        # declear C parameter
+                        # declare C parameter
                         C_SVC_C_Frame = tk.Frame(C_SVC_decision_function_shape_max_iter_tol_C_Frame)
                         tk.Label(C_SVC_C_Frame, text="C:                  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         C_SVC_C = DoubleVar() 
@@ -8652,7 +8652,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         C_SVC_kernel_degree_coef0_cache_size_Frame = tk.Frame(C_SVCParameters_Frame)
 
-                        # declear kernel parameter
+                        # declare kernel parameter
                         C_SVC_kernel_Frame = tk.Frame(C_SVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(C_SVC_kernel_Frame, text="kernel:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         C_SVC_kernel = StringVar()                       
@@ -8660,7 +8660,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(C_SVC_kernel_Frame, C_SVC_kernel, "linear", "poly", "rbf", "sigmoid").pack(side="right",anchor ="c")                        
                         C_SVC_kernel_Frame.pack(side= "top",anchor ="w")
                                                                         
-                        # declear degree parameter
+                        # declare degree parameter
                         C_SVC_degree_Frame = tk.Frame(C_SVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(C_SVC_degree_Frame, text="degree:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         C_SVC_degree = IntVar() 
@@ -8668,7 +8668,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         C_SVC_degree.set(3) 
                         C_SVC_degree_Frame.pack(side="top",anchor ="w")  
                                         
-                        # declear coef0 parameter
+                        # declare coef0 parameter
                         C_SVC_coef0_Frame = tk.Frame(C_SVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(C_SVC_coef0_Frame, text="coef0:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         C_SVC_coef0 = DoubleVar() 
@@ -8677,7 +8677,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         C_SVC_coef0_Frame.pack(side="top",anchor ="w")
 
     
-                        # declear cache_size parameter
+                        # declare cache_size parameter
                         C_SVC_cache_size_Frame = tk.Frame(C_SVC_kernel_degree_coef0_cache_size_Frame)
                         tk.Label(C_SVC_cache_size_Frame, text="cache_size:", font=FONT_12, fg = 'SteelBlue3', wraplength=40).pack(side="left",anchor ="c")
                         C_SVC_cache_size = DoubleVar() 
@@ -8690,7 +8690,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear gamma parameter float or string, optional (default=”auto”)
+                        # declare gamma parameter float or string, optional (default=”auto”)
                         C_SVC_gamma_MainFrame = tk.Frame(C_SVCParameters_Frame)
                         
                         tk.Label(C_SVC_gamma_MainFrame, text="gamma:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -8718,7 +8718,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################  
 
-                        # declear probability parameter, bool = default: False
+                        # declare probability parameter, bool = default: False
                         C_SVC_probability_Frame = tk.Frame(C_SVCParameters_Frame)
                         tk.Label(C_SVC_probability_Frame, text="probability:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         C_SVC_probability = BooleanVar()
@@ -8730,7 +8730,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear shrinking parameter, bool = default: True
+                        # declare shrinking parameter, bool = default: True
                         C_SVC_shrinking_Frame = tk.Frame(C_SVCParameters_Frame)
                         tk.Label(C_SVC_shrinking_Frame, text="shrinking:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         C_SVC_shrinking = BooleanVar()
@@ -8742,7 +8742,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################  
                                         
-                        # declear verbose parameter, bool = default: False
+                        # declare verbose parameter, bool = default: False
                         C_SVC_verbose_Frame = tk.Frame(C_SVCParameters_Frame)
                         tk.Label(C_SVC_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         C_SVC_verbose = BooleanVar()
@@ -8757,7 +8757,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear SVC classifier result 
+                        # declare SVC classifier result
                         C_SVC_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
 
                         # add some space above the submit button to maintain 
@@ -9362,7 +9362,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         KNN_random_state_int_or_none_frame = tk.Frame(KNearestNeighborsParameters_Frame)
 
                         tk.Label(KNN_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -9388,7 +9388,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         KNN_Algorithm_metric_weights_Frame = tk.Frame(KNearestNeighborsParameters_Frame)
                         
-                        # declear metric parameter
+                        # declare metric parameter
                         KNN_Metric_Frame = tk.Frame(KNN_Algorithm_metric_weights_Frame)
                         tk.Label(KNN_Metric_Frame, text="metric:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         KNN_Metric = StringVar()
@@ -9396,7 +9396,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(KNN_Metric_Frame, KNN_Metric, "minkowski", "manhattan", "chebyshev", "euclidean").pack(side="right",anchor ="c")                        
                         KNN_Metric_Frame.pack(side= "top",anchor ="w")
                         
-                        # declear weights parameter
+                        # declare weights parameter
                         KNN_Weights_Frame = tk.Frame(KNN_Algorithm_metric_weights_Frame)
                         tk.Label(KNN_Weights_Frame,         text="weights: ", font=FONT_12, fg = 'SteelBlue3').pack(side="left", anchor="c")
                         KNN_Weights = StringVar()                      
@@ -9404,7 +9404,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(KNN_Weights_Frame, KNN_Weights, "uniform", "distance").pack(side="right",anchor ="c")                        
                         KNN_Weights_Frame.pack(side= "top",anchor ="w")      
                         
-                        # declear algorithm parameter
+                        # declare algorithm parameter
                         KNN_Algorithm_Frame = tk.Frame(KNN_Algorithm_metric_weights_Frame)
                         tk.Label(KNN_Algorithm_Frame, text="algorithm:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         KNN_Algorithm = StringVar()                       
@@ -9419,7 +9419,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         KNN_NNeighbors_leaf_size_Frame = tk.Frame(KNearestNeighborsParameters_Frame)
                         
-                        # declear n_neighbors parameter       
+                        # declare n_neighbors parameter
                         KNN_NNeighbors_Frame = tk.Frame(KNN_NNeighbors_leaf_size_Frame)
                         tk.Label(KNN_NNeighbors_Frame, text="n-neighbors:", font=FONT_12, fg = 'SteelBlue3').pack(side="left", anchor="c")
                         KNN_NNeighbors = IntVar()
@@ -9427,7 +9427,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         KNN_NNeighbors.set(5)
                         KNN_NNeighbors_Frame.pack(side= "top",anchor ="w")
  
-                        # declear leaf_size parameter
+                        # declare leaf_size parameter
                         KNN_LeafSize_Frame = tk.Frame(KNN_NNeighbors_leaf_size_Frame)
                         tk.Label(KNN_LeafSize_Frame, text="leaf_size:     ", font=FONT_12,fg = 'SteelBlue3').pack(side="left", anchor="c")
                         KNN_LeafSize = IntVar()
@@ -9442,7 +9442,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         KNN_n_jobs_p_Frame = tk.Frame(KNearestNeighborsParameters_Frame)         
                             
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         KNN_NJobs_Frame = tk.Frame(KNN_n_jobs_p_Frame)
                         tk.Label(KNN_NJobs_Frame, text="n_jobs:", font=FONT_12, fg = 'SteelBlue3').pack(side="left", anchor="c")
                         KNN_NJobs=IntVar()
@@ -9450,7 +9450,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         KNN_NJobs.set(1)
                         KNN_NJobs_Frame.pack(side= "top",anchor ="w")
                                           
-                        # declear p parameter
+                        # declare p parameter
                         KNN_P_Frame = tk.Frame(KNN_n_jobs_p_Frame)
                         tk.Label(KNN_P_Frame, text="p:         ", font=FONT_12, fg = 'SteelBlue3').pack(side="left", anchor="c")
                         KNN_P = IntVar()
@@ -9465,7 +9465,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear KNN classifier Result 
+                        # declare KNN classifier Result
                         KNearestNeighbors_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -10047,7 +10047,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         NC_random_state_int_or_none_frame = tk.Frame(NC_Parameters_Frame)
 
                         tk.Label(NC_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -10073,7 +10073,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
                         
-                        # declear metric parameter
+                        # declare metric parameter
                         NC_Metric_Frame = tk.Frame(NC_Parameters_Frame)
                         tk.Label(NC_Metric_Frame, text="metric:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         NC_Metric = StringVar()
@@ -10083,7 +10083,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
 
 
-                        # declear shrink_threshold parameter, float or None, optional (default=None)
+                        # declare shrink_threshold parameter, float or None, optional (default=None)
                         NC_shrink_threshold_float_or_none_frame = tk.Frame(NC_Parameters_Frame)
 
                         tk.Label(NC_shrink_threshold_float_or_none_frame, text="shrink_threshold:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -10111,7 +10111,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Radius-Nearest Neighbors classifier Result 
+                        # declare Radius-Nearest Neighbors classifier Result
                         NC_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -10717,7 +10717,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         # frame that contains all other parameters starts here.
                         #######################################################
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         RNN_random_state_int_or_none_frame = tk.Frame(RNNParameters_Frame)
 
                         tk.Label(RNN_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -10745,7 +10745,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         RNN_Algorithm_metric_weights_algorithm_Frame = tk.Frame(RNNParameters_Frame)
                         
-                        # declear metric parameter
+                        # declare metric parameter
                         RNN_Metric_Frame = tk.Frame(RNN_Algorithm_metric_weights_algorithm_Frame)
                         tk.Label(RNN_Metric_Frame, text="metric:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         RNN_Metric = StringVar()
@@ -10753,7 +10753,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(RNN_Metric_Frame, RNN_Metric, "minkowski", "manhattan", "chebyshev", "euclidean").pack(side="right",anchor ="c")                        
                         RNN_Metric_Frame.pack(side= "top",anchor ="w")
                         
-                        # declear weights parameter
+                        # declare weights parameter
                         RNN_weights_Frame = tk.Frame(RNN_Algorithm_metric_weights_algorithm_Frame)
                         tk.Label(RNN_weights_Frame,         text="weights: ", font=FONT_12, fg = 'SteelBlue3').pack(side="left", anchor="c")
                         RNN_Weights = StringVar()                      
@@ -10761,7 +10761,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(RNN_weights_Frame, RNN_Weights, "uniform", "distance").pack(side="right",anchor ="c")                        
                         RNN_weights_Frame.pack(side= "top",anchor ="w")      
                         
-                        # declear algorithm parameter
+                        # declare algorithm parameter
                         RNN_Algorithm_Frame = tk.Frame(RNN_Algorithm_metric_weights_algorithm_Frame)
                         tk.Label(RNN_Algorithm_Frame, text="algorithm:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         RNN_Algorithm = StringVar()                       
@@ -10774,7 +10774,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
 
-                        # declear outlier_label parameter, int or None, optional (default=None)
+                        # declare outlier_label parameter, int or None, optional (default=None)
                         RNN_outlier_label_int_or_none_frame = tk.Frame(RNNParameters_Frame)
 
                         tk.Label(RNN_outlier_label_int_or_none_frame, text="outlier_label:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -10798,7 +10798,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear radius parameter       
+                        # declare radius parameter
                         RNN_radius_Frame = tk.Frame(RNNParameters_Frame)
                         tk.Label(RNN_radius_Frame, text="radius:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         RNN_radius = DoubleVar()
@@ -10809,7 +10809,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear leaf_size parameter
+                        # declare leaf_size parameter
                         RNN_LeafSize_Frame = tk.Frame(RNNParameters_Frame)
                         tk.Label(RNN_LeafSize_Frame, text="leaf_size:", font=FONT_12,fg = 'SteelBlue3').pack(anchor="c")
                         RNN_LeafSize = IntVar()
@@ -10820,7 +10820,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear p parameter
+                        # declare p parameter
                         RNN_P_Frame = tk.Frame(RNNParameters_Frame)
                         tk.Label(RNN_P_Frame, text="p:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         RNN_P = IntVar()
@@ -10834,7 +10834,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Radius-Nearest Neighbors classifier Result 
+                        # declare Radius-Nearest Neighbors classifier Result
                         RNN_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -11451,7 +11451,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         GP_random_state_int_or_none_frame = tk.Frame(GaussianProcessParameters_Frame)
 
                         tk.Label(GP_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -11477,7 +11477,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         GP_optimizer_multi_class_Frame = tk.Frame(GaussianProcessParameters_Frame)
                         
-                        # declear optimizer, str = fmin_l_bfgs_b or None, default: fmin_l_bfgs_b
+                        # declare optimizer, str = fmin_l_bfgs_b or None, default: fmin_l_bfgs_b
                         GP_optimizer_Frame = tk.Frame(GP_optimizer_multi_class_Frame)
                         tk.Label(GP_optimizer_Frame, text="optimizer:", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         GP_optimizer = StringVar()
@@ -11485,7 +11485,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(GP_optimizer_Frame, GP_optimizer, "fmin_l_bfgs_b", "None").pack(side="right",anchor ="c")
                         GP_optimizer_Frame.pack(side="top",anchor ="w")
                         
-                        # declear multi_class parameter
+                        # declare multi_class parameter
                         GP_multi_class_Frame = tk.Frame(GP_optimizer_multi_class_Frame)
                         tk.Label(GP_multi_class_Frame, text="multi_class: ", font=FONT_12, fg = 'SteelBlue3').pack(side= "left",anchor ="c")
                         GP_multi_class = StringVar() 
@@ -11501,7 +11501,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains n_restarts_optimizer, max_iter_predict, and n_jobs parameters
                         GP_n_restarts_optimizer_max_iter_predict_n_jobs_Frame = tk.Frame(GaussianProcessParameters_Frame)
 
-                        # declear n_restarts_optimizer parameter
+                        # declare n_restarts_optimizer parameter
                         GP_n_restarts_optimizer_Frame = tk.Frame(GP_n_restarts_optimizer_max_iter_predict_n_jobs_Frame)
                         tk.Label(GP_n_restarts_optimizer_Frame, text="n_restarts_optimizer:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         GP_n_restarts_optimizer = IntVar() 
@@ -11509,7 +11509,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         GP_n_restarts_optimizer.set(0) 
                         GP_n_restarts_optimizer_Frame.pack(side="top", anchor ="w")
 
-                        # declear max_iter_predict parameter 
+                        # declare max_iter_predict parameter
                         GP_max_iter_predict_Frame = tk.Frame(GP_n_restarts_optimizer_max_iter_predict_n_jobs_Frame)
                         tk.Label(GP_max_iter_predict_Frame, text="max_iter_predict:      ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         GP_max_iter_predict = IntVar()
@@ -11517,7 +11517,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         GP_max_iter_predict.set(100)
                         GP_max_iter_predict_Frame.pack(side="top", anchor ="w")
                                         
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         GP_n_jobs_Frame = tk.Frame(GP_n_restarts_optimizer_max_iter_predict_n_jobs_Frame)
                         tk.Label(GP_n_jobs_Frame, text="n_jobs:                       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         GP_n_jobs = IntVar() 
@@ -11531,7 +11531,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
 
 
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         GP_warm_start_Frame = tk.Frame(GaussianProcessParameters_Frame)
                         tk.Label(GP_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         GP_warm_start = BooleanVar()
@@ -11543,7 +11543,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
 
-                        # declear copy_X_train parameter, bool = default: True
+                        # declare copy_X_train parameter, bool = default: True
                         Gp_copy_X_train_Frame = tk.Frame(GaussianProcessParameters_Frame)
                         tk.Label(Gp_copy_X_train_Frame, text="copy_X_train:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Gp_copy_X_train = BooleanVar()
@@ -11558,7 +11558,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
               ###########################################
               
-                        # declear Logistic Regression classifier result 
+                        # declare Logistic Regression classifier result
                         GaussianProcess_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -12162,7 +12162,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         # frame that contains all other parameters starts here.
                         #######################################################
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         BernoulliNB_random_state_int_or_none_frame = tk.Frame(BernoulliNBParameters_Frame)
 
                         tk.Label(BernoulliNB_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -12186,7 +12186,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear alpha parameter
+                        # declare alpha parameter
                         BernoulliNB_alpha_Frame = tk.Frame(BernoulliNBParameters_Frame)
                         tk.Label(BernoulliNB_alpha_Frame, text="alpha:", font=FONT_12, fg = 'SteelBlue3').pack(anchor ="c")
                         BernoulliNB_alpha = DoubleVar() 
@@ -12197,7 +12197,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear binarize parameter, float or None, optional (default=0.0)
+                        # declare binarize parameter, float or None, optional (default=0.0)
                         BernoulliNB_binarize_float_or_none_frame = tk.Frame(BernoulliNBParameters_Frame)
 
                         tk.Label(BernoulliNB_binarize_float_or_none_frame, text="binarize:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -12221,7 +12221,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear fit_prior parameter, bool = default: False
+                        # declare fit_prior parameter, bool = default: False
                         BernoulliNB_fit_prior_Frame = tk.Frame(BernoulliNBParameters_Frame)
                         tk.Label(BernoulliNB_fit_prior_Frame, text="fit_prior:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         BernoulliNB_fit_prior = BooleanVar()
@@ -12238,7 +12238,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
               ###########################################
               
               
-                        # declear BernoulliNB classifier Result 
+                        # declare BernoulliNB classifier Result
                         BernoulliNB_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -12816,7 +12816,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         GaussianNB_random_state_int_or_none_frame = tk.Frame(GaussianNBParameters_Frame)
 
                         tk.Label(GaussianNB_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -12849,7 +12849,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear GaussianNB classifier Result 
+                        # declare GaussianNB classifier Result
                         GaussianNB_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -13436,7 +13436,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
                                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         MultinomialNB_random_state_int_or_none_frame = tk.Frame(MultinomialNBParameters_Frame)
 
                         tk.Label(MultinomialNB_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -13460,7 +13460,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################
                                         
-                        # declear alpha parameter
+                        # declare alpha parameter
                         MultinomialNB_alpha_Frame = tk.Frame(MultinomialNBParameters_Frame)
                         tk.Label(MultinomialNB_alpha_Frame, text="alpha:", font=FONT_12, fg = 'SteelBlue3').pack(anchor ="c")
                         MultinomialNB_alpha = DoubleVar() 
@@ -13469,7 +13469,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MultinomialNB_alpha_Frame.pack(side= "left", anchor ="n", padx =10)
                                         ###################
                                         ###################
-                        # declear fit_prior parameter, bool = default: False
+                        # declare fit_prior parameter, bool = default: False
                         MultinomialNB_fit_prior_Frame = tk.Frame(MultinomialNBParameters_Frame)
                         tk.Label(MultinomialNB_fit_prior_Frame, text="fit_prior:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         MultinomialNB_fit_prior = BooleanVar()
@@ -13484,7 +13484,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
               ###########################################
               
-                        # declear MultinomialNB classifier result 
+                        # declare MultinomialNB classifier result
                         MultinomialNB_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -14129,7 +14129,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         DecisionTree_random_state_int_or_none_frame = tk.Frame(DecisionTreeParameters_Frame)
 
                         tk.Label(DecisionTree_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -14155,7 +14155,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         DecisionTree_criterion_and_min_splitter_MainFrame = tk.Frame(DecisionTreeParameters_Frame)
                                         
-                        # declear splitter parameter
+                        # declare splitter parameter
                         DecisionTree_splitter_Frame = tk.Frame(DecisionTree_criterion_and_min_splitter_MainFrame)
                         tk.Label(DecisionTree_splitter_Frame, text="splitter:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         DecisionTree_splitter = StringVar()                      
@@ -14163,7 +14163,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(DecisionTree_splitter_Frame, DecisionTree_splitter, "best", "entropy").pack(side="right",anchor ="c")
                         DecisionTree_splitter_Frame.pack(side="top",anchor ="w")
                         
-                        # declear criterion parameter
+                        # declare criterion parameter
                         DecisionTree_criterion_Frame = tk.Frame(DecisionTree_criterion_and_min_splitter_MainFrame)
                         tk.Label(DecisionTree_criterion_Frame, text="criterion:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         DecisionTree_criterion = StringVar()                      
@@ -14171,7 +14171,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(DecisionTree_criterion_Frame, DecisionTree_criterion, "gini", "random").pack(side="right",anchor ="c")
                         DecisionTree_criterion_Frame.pack(side="top",anchor ="w")
                         
-                        # declear min_weight_fraction_leaf parameter
+                        # declare min_weight_fraction_leaf parameter
                         DecisionTree_min_weight_fraction_leaf_Frame = tk.Frame(DecisionTree_criterion_and_min_splitter_MainFrame)
                         tk.Label(DecisionTree_min_weight_fraction_leaf_Frame, text="min_weight_fraction_leaf:", font=FONT_12, fg = 'SteelBlue3', wraplength=65).pack(side="left",anchor ="c")
                         DecisionTree_min_weight_fraction_leaf = DoubleVar() 
@@ -14193,7 +14193,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         DecisionTree_max_depth_and_max_leaf_nodes_MainFrame = tk.Frame(DecisionTreeParameters_Frame)
                         
-                        # declear max_depth parameter, int or None, optional (default=None)
+                        # declare max_depth parameter, int or None, optional (default=None)
                         DecisionTree_max_depth_int_or_none_frame = tk.Frame(DecisionTree_max_depth_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(DecisionTree_max_depth_int_or_none_frame, text="max_depth:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -14215,7 +14215,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         DecisionTree_max_depth_int_or_none_frame.pack(side="top",anchor ="w")
                                         
                                          
-                        # declear max_leaf_nodes parameter, int or None, optional (default=None)
+                        # declare max_leaf_nodes parameter, int or None, optional (default=None)
                         DecisionTree_max_leaf_nodes_int_or_none_frame = tk.Frame(DecisionTree_max_depth_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(DecisionTree_max_leaf_nodes_int_or_none_frame, text="max_leaf_nodes:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -14243,7 +14243,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         DecisionTree_min_samples_split_and_min_samples_leaf_MainFrame = tk.Frame(DecisionTreeParameters_Frame)
 
-                        # declear min_samples_split parameter, int or float, optional (default=2)
+                        # declare min_samples_split parameter, int or float, optional (default=2)
                         DecisionTree_min_samples_split_int_or_float_MainFrame = tk.Frame(DecisionTree_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(DecisionTree_min_samples_split_int_or_float_MainFrame, text="min_samples_split:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -14264,7 +14264,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ##################
                                         ##################                     
 
-                        # declear min_samples_leaf parameter, int or float, optional (default=2)                        
+                        # declare min_samples_leaf parameter, int or float, optional (default=2)
                         DecisionTree_min_samples_leaf_int_or_float_MainFrame = tk.Frame(DecisionTree_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(DecisionTree_min_samples_leaf_int_or_float_MainFrame, text="min_samples_leaf:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -14288,7 +14288,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ##################                                         
                                                  
                                         
-                        # declear presort parameter, bool = default: False
+                        # declare presort parameter, bool = default: False
                         DecisionTree_presort_Frame = tk.Frame(DecisionTreeParameters_Frame)
                         tk.Label(DecisionTree_presort_Frame, text="presort:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         DecisionTree_presort = BooleanVar()
@@ -14302,7 +14302,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ###################    
 
-                        # declear max_features parameter, int, float, string or None, optional (default=”auto”)
+                        # declare max_features parameter, int, float, string or None, optional (default=”auto”)
                         DecisionTree_max_features_MainFrame = tk.Frame(DecisionTreeParameters_Frame)
                         
                         tk.Label(DecisionTree_max_features_MainFrame, text="max_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -14340,7 +14340,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
               ###########################################
               
-                        # declear DecisionTree classifier Result 
+                        # declare DecisionTree classifier Result
                         DecisionTree_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         
@@ -14988,7 +14988,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         # frame that contains all other parameters starts here.
                         #######################################################
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         ExtraTree_random_state_int_or_none_frame = tk.Frame(ExtraTreeParameters_Frame)
 
                         tk.Label(ExtraTree_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -15014,7 +15014,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         ExtraTree_criterion_splitter_max_depth_MainFrame = tk.Frame(ExtraTreeParameters_Frame)
 
-                        # declear splitter parameter
+                        # declare splitter parameter
                         ExtraTree_splitter_Frame = tk.Frame(ExtraTree_criterion_splitter_max_depth_MainFrame)
                         tk.Label(ExtraTree_splitter_Frame, text="splitter:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         ExtraTree_splitter = StringVar()                      
@@ -15022,7 +15022,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(ExtraTree_splitter_Frame, ExtraTree_splitter, "random", "best").pack(side="right",anchor ="c")
                         ExtraTree_splitter_Frame.pack(side="top",anchor ="w")
                         
-                        # declear criterion parameter
+                        # declare criterion parameter
                         ExtraTree_criterion_Frame = tk.Frame(ExtraTree_criterion_splitter_max_depth_MainFrame)
                         tk.Label(ExtraTree_criterion_Frame, text="criterion:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor="c")
                         ExtraTree_criterion = StringVar()                      
@@ -15030,7 +15030,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(ExtraTree_criterion_Frame, ExtraTree_criterion, "gini", "entropy").pack(side="right",anchor ="c")
                         ExtraTree_criterion_Frame.pack(side="top",anchor ="w")
 
-                        # declear min_weight_fraction_leaf parameter
+                        # declare min_weight_fraction_leaf parameter
                         ExtraTree_min_weight_fraction_leaf_Frame = tk.Frame(ExtraTree_criterion_splitter_max_depth_MainFrame)
                         tk.Label(ExtraTree_min_weight_fraction_leaf_Frame, text="min_weight_fraction_leaf:", font=FONT_12, fg = 'SteelBlue3', wraplength=65).pack(side="left",anchor ="c")
                         ExtraTree_min_weight_fraction_leaf = DoubleVar() 
@@ -15052,7 +15052,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         ExtraTree_random_state_and_max_leaf_nodes_MainFrame = tk.Frame(ExtraTreeParameters_Frame)
                         
-                        # declear max_depth parameter, int or None, optional (default=None)
+                        # declare max_depth parameter, int or None, optional (default=None)
                         ExtraTree_depth_int_or_none_frame = tk.Frame(ExtraTree_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(ExtraTree_depth_int_or_none_frame, text="max_depth:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -15074,7 +15074,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ExtraTree_depth_int_or_none_frame.pack(side="top",anchor ="w")
 
                                          
-                        # declear max_leaf_nodes parameter, int or None, optional (default=None)
+                        # declare max_leaf_nodes parameter, int or None, optional (default=None)
                         ExtraTree_max_leaf_nodes_int_or_none_frame = tk.Frame(ExtraTree_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(ExtraTree_max_leaf_nodes_int_or_none_frame, text="max_leaf_nodes:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -15102,7 +15102,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         ExtraTree_min_samples_split_and_min_samples_leaf_MainFrame = tk.Frame(ExtraTreeParameters_Frame)
 
-                        # declear min_samples_split parameter, int or float, optional (default=2)
+                        # declare min_samples_split parameter, int or float, optional (default=2)
                         ExtraTree_min_samples_split_int_or_float_MainFrame = tk.Frame(ExtraTree_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(ExtraTree_min_samples_split_int_or_float_MainFrame, text="min_samples_split:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -15122,7 +15122,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ExtraTree_min_samples_split_int_or_float_MainFrame.pack(side="top",anchor ="w")
                                                              
 
-                        # declear min_samples_leaf parameter, int or float, optional (default=2)                        
+                        # declare min_samples_leaf parameter, int or float, optional (default=2)
                         ExtraTree_min_samples_leaf_int_or_float_MainFrame = tk.Frame(ExtraTree_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(ExtraTree_min_samples_leaf_int_or_float_MainFrame, text="min_samples_leaf:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -15145,7 +15145,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ##################
                                         ################## 
                                         
-                        # declear max_features parameter, int, float, string or None, optional (default=”auto”)
+                        # declare max_features parameter, int, float, string or None, optional (default=”auto”)
                         ExtraTree_max_max_features_MainFrame = tk.Frame(ExtraTreeParameters_Frame)
                         
                         tk.Label(ExtraTree_max_max_features_MainFrame, text="max_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -15182,7 +15182,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Extremely Randomized Trees classifier Result 
+                        # declare Extremely Randomized Trees classifier Result
                         ERF_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         ttk.Button(ERF_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = ExtraTree_SubFunc).pack(anchor="c", pady=1)
@@ -15781,7 +15781,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         AdaBoost_random_state_int_or_none_frame = tk.Frame(AdaBoostParameters_Frame)
                         tk.Label(AdaBoost_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -15803,7 +15803,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                                         
-                        # declear algorithm parameter
+                        # declare algorithm parameter
                         AdaBoost_algorithm_Frame = tk.Frame(AdaBoostParameters_Frame)
                         tk.Label(AdaBoost_algorithm_Frame,         text="algorithm:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         AdaBoost_algorithm = StringVar()                      
@@ -15816,7 +15816,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         AdaBoost_n_estimators_learning_rate_Frame =tk.Frame(AdaBoostParameters_Frame)
 
-                        # declear n_estimators parameter
+                        # declare n_estimators parameter
                         AdaBoost_n_estimators_Frame = tk.Frame(AdaBoost_n_estimators_learning_rate_Frame)
                         tk.Label(AdaBoost_n_estimators_Frame, text="n_estimators:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         AdaBoost_n_estimators = IntVar() 
@@ -15824,7 +15824,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         AdaBoost_n_estimators.set(50) 
                         AdaBoost_n_estimators_Frame.pack(side="top",anchor ="w")  
                                                                 
-                        # declear learning_rate parameter
+                        # declare learning_rate parameter
                         AdaBoost_learning_rate_Frame = tk.Frame(AdaBoost_n_estimators_learning_rate_Frame)
                         tk.Label(AdaBoost_learning_rate_Frame, text="learning_rate:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         AdaBoost_learning_rate = DoubleVar() 
@@ -15844,7 +15844,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         
               ###########################################
-                        # declear AdaBoost classifier Result 
+                        # declare AdaBoost classifier Result
                         AdaBoost_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
 
                         # add some space above the submit button to maintain 
@@ -16462,7 +16462,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame that contains all other parameters starts here.
                         #######################################################
 
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         Bagging_random_state_int_or_none_frame = tk.Frame(BaggingParameters_Frame)
 
                         tk.Label(Bagging_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -16488,7 +16488,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains n_estimators, verbose and n_jobs parameters
                         n_estimators_verbose_n_jobs_Frame = tk.Frame(BaggingParameters_Frame)   
                         
-                        # declear n_estimators parameter
+                        # declare n_estimators parameter
                         Bagging_n_estimators_Frame = tk.Frame(n_estimators_verbose_n_jobs_Frame)
                         tk.Label(Bagging_n_estimators_Frame, text="n_estimators:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Bagging_n_estimators = IntVar() 
@@ -16496,7 +16496,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         Bagging_n_estimators.set(10) 
                         Bagging_n_estimators_Frame.pack(side="top",anchor ="w")
                         
-                       # declear verbose parameter
+                       # declare verbose parameter
                         Bagging_verbose_Frame = tk.Frame(n_estimators_verbose_n_jobs_Frame)
                         tk.Label(Bagging_verbose_Frame, text="verbose:        ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Bagging_verbose = IntVar() 
@@ -16504,7 +16504,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         Bagging_verbose.set(0) 
                         Bagging_verbose_Frame.pack(side="top",anchor ="w")
                                                             
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         Bagging_n_jobs_Frame = tk.Frame(n_estimators_verbose_n_jobs_Frame)
                         tk.Label(Bagging_n_jobs_Frame, text="n_jobs:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         Bagging_n_jobs = IntVar() 
@@ -16517,7 +16517,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                         
-                        # declear max_samples parameter, int or float, optional (default=1.0)
+                        # declare max_samples parameter, int or float, optional (default=1.0)
                         Bagging_max_samples_int_or_float_MainFrame = tk.Frame(BaggingParameters_Frame)
                         tk.Label(Bagging_max_samples_int_or_float_MainFrame, text="max_samples:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -16539,7 +16539,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ###################
                                         ################### 
                         
-                        # declear max_features parameter, int or float, optional (default=1.0)
+                        # declare max_features parameter, int or float, optional (default=1.0)
                         Bagging_max_features_int_or_float_MainFrame = tk.Frame(BaggingParameters_Frame)
                         tk.Label(Bagging_max_features_int_or_float_MainFrame, text="max_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -16563,7 +16563,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         Bagging_bootstrap_features_bootstrap_Frame = tk.Frame(BaggingParameters_Frame)
 
-                        # declear bootstrap_features parameter, bool = default: False
+                        # declare bootstrap_features parameter, bool = default: False
                         Bagging_bootstrap_features_Frame = tk.Frame(Bagging_bootstrap_features_bootstrap_Frame)
                         tk.Label(Bagging_bootstrap_features_Frame, text="bootstrap_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Bagging_bootstrap_features = BooleanVar()
@@ -16572,7 +16572,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         Bagging_bootstrap_features.set(False) 
                         Bagging_bootstrap_features_Frame.pack(side="top")
                                                                                          
-                        # declear bootstrap parameter, bool = default: True
+                        # declare bootstrap parameter, bool = default: True
                         Bagging_bootstrap_Frame = tk.Frame(Bagging_bootstrap_features_bootstrap_Frame)
                         tk.Label(Bagging_bootstrap_Frame, text="bootstrap:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Bagging_bootstrap = BooleanVar()
@@ -16588,7 +16588,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         Bagging_warm_start_oob_score_Frame = tk.Frame(BaggingParameters_Frame)
     
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         Bagging_warm_start_Frame = tk.Frame(Bagging_warm_start_oob_score_Frame)
                         tk.Label(Bagging_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Bagging_warm_start = BooleanVar()
@@ -16597,7 +16597,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         Bagging_warm_start.set(False) 
                         Bagging_warm_start_Frame.pack(side="top")
 
-                        # declear oob_score parameter, bool = default: False
+                        # declare oob_score parameter, bool = default: False
                         Bagging_oob_score_Frame = tk.Frame(Bagging_warm_start_oob_score_Frame)
                         tk.Label(Bagging_oob_score_Frame, text="oob_score:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         Bagging_oob_score = BooleanVar()
@@ -16616,7 +16616,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
 
               ###########################################
-                        # declear Bagging classifier Result 
+                        # declare Bagging classifier Result
                         Bagging_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         ttk.Button(Bagging_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = Bagging_SubFunc).pack(anchor="c", pady=5)
                         BaggingSelectedParameters_Frame = tk.Frame(Bagging_ClassifierEvaluation_MainFrame)
@@ -17275,7 +17275,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         ERF_random_state_and_max_leaf_nodes_MainFrame = tk.Frame(ERFParameters_Frame)
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         ERF_random_state_int_or_none_frame = tk.Frame(ERF_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(ERF_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -17297,7 +17297,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ERF_random_state_int_or_none_frame.pack(side="top",anchor ="w")
                         
                                         
-                        # declear max_leaf_nodes parameter, int or None, optional (default=None)
+                        # declare max_leaf_nodes parameter, int or None, optional (default=None)
                         ERF_max_leaf_nodes_int_or_none_frame = tk.Frame(ERF_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(ERF_max_leaf_nodes_int_or_none_frame, text="max_leaf_nodes:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -17325,7 +17325,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains n_estimators, verbose and n_jobs parameters
                         ERF_n_estimators_verbose_n_jobs_leaf_mpurity_decrease_Frame = tk.Frame(ERFParameters_Frame)  
                         
-                        # declear n_estimators parameter
+                        # declare n_estimators parameter
                         ERF_n_estimators_Frame = tk.Frame(ERF_n_estimators_verbose_n_jobs_leaf_mpurity_decrease_Frame)
                         tk.Label(ERF_n_estimators_Frame, text="n_estimators:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         ERF_n_estimators = IntVar() 
@@ -17334,7 +17334,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ERF_n_estimators_Frame.pack(side="top",anchor ="w")
                                         
                                           
-                       # declear verbose parameter
+                       # declare verbose parameter
                         ERF_verbose_Frame = tk.Frame(ERF_n_estimators_verbose_n_jobs_leaf_mpurity_decrease_Frame)
                         tk.Label(ERF_verbose_Frame, text="verbose:        ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         ERF_verbose = IntVar() 
@@ -17343,7 +17343,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ERF_verbose_Frame.pack(side="top",anchor ="w")
                                         
                                                             
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         ERF_n_jobs_Frame = tk.Frame(ERF_n_estimators_verbose_n_jobs_leaf_mpurity_decrease_Frame)
                         tk.Label(ERF_n_jobs_Frame, text="n_jobs:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         ERF_n_jobs = IntVar() 
@@ -17352,7 +17352,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ERF_n_jobs_Frame.pack(side="top",anchor ="w")
                         
 
-                        # declear min_weight_fraction_leaf parameter
+                        # declare min_weight_fraction_leaf parameter
                         ERF_min_weight_fraction_leaf_Frame = tk.Frame(ERF_n_estimators_verbose_n_jobs_leaf_mpurity_decrease_Frame)
                         tk.Label(ERF_min_weight_fraction_leaf_Frame, text="min_weight_fraction_leaf:", font=FONT_12, fg = 'SteelBlue3',  wraplength=65).pack(side="left",anchor ="c")
                         ERF_min_weight_fraction_leaf = DoubleVar() 
@@ -17378,7 +17378,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         ERF_min_samples_split_and_min_samples_leaf_MainFrame = tk.Frame(ERFParameters_Frame)
 
-                        # declear min_samples_split parameter, int or float, optional (default=2)
+                        # declare min_samples_split parameter, int or float, optional (default=2)
                         ERF_min_samples_split_int_or_float_MainFrame = tk.Frame(ERF_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(ERF_min_samples_split_int_or_float_MainFrame, text="min_samples_split:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -17397,7 +17397,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ERF_min_samples_split_int_or_float_MainFrame.pack(side="top",anchor ="w")
                                                              
 
-                        # declear min_samples_leaf parameter, int or float, optional (default=2)                        
+                        # declare min_samples_leaf parameter, int or float, optional (default=2)
                         ERF_min_samples_leaf_int_or_float_MainFrame = tk.Frame(ERF_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(ERF_min_samples_leaf_int_or_float_MainFrame, text="min_samples_leaf:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -17422,7 +17422,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         ERF_criterion_and_max_depth_MainFrame = tk.Frame(ERFParameters_Frame)
                     
-                        # declear max_depth parameter, int or None, optional (default=None)
+                        # declare max_depth parameter, int or None, optional (default=None)
                         ERF_max_depth_int_or_none_frame = tk.Frame(ERF_criterion_and_max_depth_MainFrame)
 
                         tk.Label(ERF_max_depth_int_or_none_frame, text="max_depth:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -17484,7 +17484,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         ################### 
                                         
                         ERF_criterion_max_features_Frame = tk.Frame(ERFParameters_Frame)
-                        # declear criterion parameter
+                        # declare criterion parameter
                         ERF_criterion_Frame = tk.Frame(ERF_criterion_max_features_Frame)
                         tk.Label(ERF_criterion_Frame,         text="criterion:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         ERF_criterion = StringVar()                      
@@ -17492,7 +17492,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         tk.OptionMenu(ERF_criterion_Frame, ERF_criterion, "gini", "entropy").pack(anchor ="c")
                         ERF_criterion_Frame.pack(side="top")
 
-                        # declear max_features parameter, int, float, string or None, optional (default=”auto”)
+                        # declare max_features parameter, int, float, string or None, optional (default=”auto”)
                         ERF_max_max_features_MainFrame = tk.Frame(ERF_criterion_max_features_Frame)
                         
                         tk.Label(ERF_max_max_features_MainFrame, text="max_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -17534,7 +17534,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear Extremely Randomized Trees classifier Result 
+                        # declare Extremely Randomized Trees classifier Result
                         ERF_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         ttk.Button(ERF_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = E_RandomForest_SubFunc).pack(anchor="c", pady=3)
@@ -18182,7 +18182,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         
                         RF_random_state_and_max_leaf_nodes_MainFrame = tk.Frame(RFParameters_Frame)
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         RF_random_state_int_or_none_frame = tk.Frame(RF_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(RF_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -18204,7 +18204,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_random_state_int_or_none_frame.pack(side="top",anchor ="w")
                                         
                         
-                        # declear max_leaf_nodes parameter, int or None, optional (default=None)
+                        # declare max_leaf_nodes parameter, int or None, optional (default=None)
                         RF_max_leaf_nodes_int_or_none_frame = tk.Frame(RF_random_state_and_max_leaf_nodes_MainFrame)
 
                         tk.Label(RF_max_leaf_nodes_int_or_none_frame, text="max_leaf_nodes:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -18232,7 +18232,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains n_estimators, verbose and n_jobs parameters
                         RF_n_estimators_verbose_n_jobs_Frame = tk.Frame(RFParameters_Frame)
                         
-                        # declear n_estimators parameter
+                        # declare n_estimators parameter
                         RF_n_estimators_Frame = tk.Frame(RF_n_estimators_verbose_n_jobs_Frame)
                         tk.Label(RF_n_estimators_Frame, text="n_estimators:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         RF_n_estimators = IntVar() 
@@ -18240,7 +18240,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_n_estimators.set(10) 
                         RF_n_estimators_Frame.pack(side="top",anchor ="w")
                                           
-                       # declear verbose parameter
+                       # declare verbose parameter
                         RF_verbose_Frame = tk.Frame(RF_n_estimators_verbose_n_jobs_Frame)
                         tk.Label(RF_verbose_Frame, text="verbose:        ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         RF_verbose = IntVar() 
@@ -18248,7 +18248,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_verbose.set(0) 
                         RF_verbose_Frame.pack(side="top",anchor ="w")
                                                             
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         RF_n_jobs_Frame = tk.Frame(RF_n_estimators_verbose_n_jobs_Frame)
                         tk.Label(RF_n_jobs_Frame, text="n_jobs:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         RF_n_jobs = IntVar() 
@@ -18256,7 +18256,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_n_jobs.set(1) 
                         RF_n_jobs_Frame.pack(side="top",anchor ="w")                        
                         
-                        # declear min_weight_fraction_leaf parameter
+                        # declare min_weight_fraction_leaf parameter
                         RF_min_weight_fraction_leaf_Frame = tk.Frame(RF_n_estimators_verbose_n_jobs_Frame)
                         tk.Label(RF_min_weight_fraction_leaf_Frame, text="min_weight_fraction_leaf:", font=FONT_12, fg = 'SteelBlue3',  wraplength=65).pack(side="left",anchor ="c")
                         RF_min_weight_fraction_leaf = DoubleVar() 
@@ -18264,7 +18264,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_min_weight_fraction_leaf.set(0) 
                         RF_min_weight_fraction_leaf_Frame.pack(side= "top", anchor ="w")
                                          
-                        # declear min_impurity_decrease parameter
+                        # declare min_impurity_decrease parameter
                         RF_min_impurity_decrease_Frame = tk.Frame(RF_n_estimators_verbose_n_jobs_Frame)
                         tk.Label(RF_min_impurity_decrease_Frame, text="min_impurity_decrease:", font=FONT_12, fg = 'SteelBlue3', wraplength=62).pack(side="left",anchor ="c")
                         RF_min_impurity_decrease = DoubleVar() 
@@ -18280,7 +18280,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         RF_min_samples_split_and_min_samples_leaf_MainFrame = tk.Frame(RFParameters_Frame)
 
-                        # declear min_samples_split parameter, int or float, optional (default=2)
+                        # declare min_samples_split parameter, int or float, optional (default=2)
                         RF_min_samples_split_int_or_float_MainFrame = tk.Frame(RF_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(RF_min_samples_split_int_or_float_MainFrame, text="min_samples_split:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -18299,7 +18299,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_min_samples_split_int_or_float_MainFrame.pack(side="top",anchor ="w")
                                         
 
-                        # declear min_samples_leaf parameter, int or float, optional (default=2)                        
+                        # declare min_samples_leaf parameter, int or float, optional (default=2)
                         RF_min_samples_leaf_int_or_float_MainFrame = tk.Frame(RF_min_samples_split_and_min_samples_leaf_MainFrame)
                         tk.Label(RF_min_samples_leaf_int_or_float_MainFrame, text="min_samples_leaf:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
 
@@ -18324,7 +18324,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         RF_max_depth_oob_score_MainFrame = tk.Frame(RFParameters_Frame)
                         
-                        # declear max_depth parameter, int or None, optional (default=None)
+                        # declare max_depth parameter, int or None, optional (default=None)
                         RF_max_depth_int_or_none_frame = tk.Frame(RF_max_depth_oob_score_MainFrame)
 
                         tk.Label(RF_max_depth_int_or_none_frame, text="max_depth:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -18389,7 +18389,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         RF_max_features_criterion_MainFrame = tk.Frame(RFParameters_Frame)
                         
-                        # declear criterion parameter
+                        # declare criterion parameter
                         RF_criterion_Frame = tk.Frame(RF_max_features_criterion_MainFrame)
                         tk.Label(RF_criterion_Frame,         text="criterion:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         RF_criterion = StringVar()                      
@@ -18398,7 +18398,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         RF_criterion_Frame.pack(side="top")
                                         
 
-                        # declear max_features parameter, int, float, string or None, optional (default=”auto”)
+                        # declare max_features parameter, int, float, string or None, optional (default=”auto”)
                         RF_max_features_MainFrame = tk.Frame(RF_max_features_criterion_MainFrame)
                         
                         tk.Label(RF_max_features_MainFrame, text="max_features:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -18439,7 +18439,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear classifier result 
+                        # declare classifier result
                         RF_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         ttk.Button(RF_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = RandomForest_SubFunc).pack(anchor="c", pady=3)
                         RF_SelectedParameters_Frame = tk.Frame(RF_ClassifierEvaluation_MainFrame)
@@ -19040,7 +19040,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         # frame that contains all other parameters starts here.
                         #######################################################
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         
                         LP_random_state_int_or_none_frame = tk.Frame(LabelPropagationParameters_Frame)
 
@@ -19079,7 +19079,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LP_gamma_n_neighbors_Frame = tk.Frame(LabelPropagationParameters_Frame) 
                         
 
-                        # declear n_neighbors parameter
+                        # declare n_neighbors parameter
                         LP_n_neighbors_Frame = tk.Frame(LP_gamma_n_neighbors_Frame)
                         tk.Label(LP_n_neighbors_Frame, text="n_neighbors:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LP_n_neighbors = IntVar() 
@@ -19088,7 +19088,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LP_n_neighbors_Frame.pack(side= "top", anchor ="w") 
 
 
-                        # declear learning_rate parameter
+                        # declare learning_rate parameter
                         LP_gamma_Frame = tk.Frame(LP_gamma_n_neighbors_Frame)
                         tk.Label(LP_gamma_Frame, text="gamma:        ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LP_gamma = DoubleVar() 
@@ -19106,7 +19106,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LP_max_iter_n_jobs_tol_Frame = tk.Frame(LabelPropagationParameters_Frame) 
                         
 
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         LP_max_iter_Frame = tk.Frame(LP_max_iter_n_jobs_tol_Frame)
                         tk.Label(LP_max_iter_Frame, text="max_iter:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LP_max_iter = IntVar() 
@@ -19114,7 +19114,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LP_max_iter.set(30) 
                         LP_max_iter_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear n_jobs parameter
+                        # declare n_jobs parameter
                         LP_n_jobs_Frame = tk.Frame(LP_max_iter_n_jobs_tol_Frame)
                         tk.Label(LP_n_jobs_Frame, text="n_jobs:   ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LP_n_jobs = IntVar() 
@@ -19122,7 +19122,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         LP_n_jobs.set(1) 
                         LP_n_jobs_Frame.pack(side= "top", anchor ="w") 
                         
-                        # declear tol parameter
+                        # declare tol parameter
                         LP_tol_Frame = tk.Frame(LP_max_iter_n_jobs_tol_Frame)
                         tk.Label(LP_tol_Frame, text="tol:          ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         LP_tol = DoubleVar() 
@@ -19141,7 +19141,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
               ###########################################
               
-                        # declear GaussianNB classifier Result 
+                        # declare GaussianNB classifier Result
                         LabelPropagation_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
                         # add some space above the submit button to maintain 
@@ -19792,7 +19792,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                         MLP_random_state_and_batch_size_MainFrame = tk.Frame(MLPParameters_Frame)
                         
-                        # declear random_state parameter, int or None, optional (default=None)
+                        # declare random_state parameter, int or None, optional (default=None)
                         MLP_random_state_int_or_none_frame = tk.Frame(MLP_random_state_and_batch_size_MainFrame)
 
                         tk.Label(MLP_random_state_int_or_none_frame, text="random_state:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -19814,7 +19814,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_random_state_int_or_none_frame.pack(side="top",anchor ="w")
                         
                                         
-                        # declear batch_size parameter, int or auto, optional (default=auto)
+                        # declare batch_size parameter, int or auto, optional (default=auto)
                         MLP_batch_size_int_or_auto_frame = tk.Frame(MLP_random_state_and_batch_size_MainFrame)
 
                         tk.Label(MLP_batch_size_int_or_auto_frame, text="batch_size:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
@@ -19858,7 +19858,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_solver_frame.pack(side= "top", anchor ="w") 
 
 
-                        # declear learning_rate parameter
+                        # declare learning_rate parameter
                         MLP_learning_rate_Frame = tk.Frame(MLP_activation_solver_learning_rate_frame)
                         tk.Label(MLP_learning_rate_Frame, text="learning_rate:", font=FONT_12, fg = 'SteelBlue3', wraplength=52).pack(side= "left",anchor ="c")
                         MLP_learning_rate = StringVar()
@@ -19875,7 +19875,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains hidden_layer_sizes, alpha, learning_rate_init, power_t, and max_iter parameters
                         MLP_hidden_layer_sizes_learning_rate_init_power_t_alpha_Frame = tk.Frame(MLPParameters_Frame) 
                         
-                        # declear hidden_layer_sizes parameter
+                        # declare hidden_layer_sizes parameter
                         MLP_hidden_layer_sizes_Frame = tk.Frame(MLP_hidden_layer_sizes_learning_rate_init_power_t_alpha_Frame)
                         tk.Label(MLP_hidden_layer_sizes_Frame, text="hidden_layer_sizes:", font=FONT_12, fg = 'SteelBlue3', wraplength=70).pack(side="left",anchor ="c")
                         MLP_hidden_layer_sizes = IntVar() 
@@ -19883,7 +19883,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_hidden_layer_sizes.set(100) 
                         MLP_hidden_layer_sizes_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear learning_rate_init parameter
+                        # declare learning_rate_init parameter
                         MLP_learning_rate_init_Frame = tk.Frame(MLP_hidden_layer_sizes_learning_rate_init_power_t_alpha_Frame)
                         tk.Label(MLP_learning_rate_init_Frame, text="learning_rate_init:", font=FONT_12, fg = 'SteelBlue3', wraplength=66).pack(side="left",anchor ="c")
                         MLP_learning_rate_init = DoubleVar() 
@@ -19891,7 +19891,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_learning_rate_init.set("{:.1E}".format(Decimal(0.001)))
                         MLP_learning_rate_init_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear power_t parameter
+                        # declare power_t parameter
                         MLP_power_t_Frame = tk.Frame(MLP_hidden_layer_sizes_learning_rate_init_power_t_alpha_Frame)
                         tk.Label(MLP_power_t_Frame, text="power_t:       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_power_t = DoubleVar() 
@@ -19899,7 +19899,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_power_t.set(0.5) 
                         MLP_power_t_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear alpha parameter
+                        # declare alpha parameter
                         MLP_alpha_Frame = tk.Frame(MLP_hidden_layer_sizes_learning_rate_init_power_t_alpha_Frame)
                         tk.Label(MLP_alpha_Frame, text="alpha:           ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_alpha = DoubleVar() 
@@ -19917,7 +19917,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains tol, momentum beta_1, beta_2 and max_iter parameters
                         MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame = tk.Frame(MLPParameters_Frame) 
                         
-                        # declear momentum parameter
+                        # declare momentum parameter
                         MLP_momentum_Frame = tk.Frame(MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame)
                         tk.Label(MLP_momentum_Frame, text="momentum:", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_momentum = DoubleVar() 
@@ -19925,7 +19925,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_momentum.set(0.9) 
                         MLP_momentum_Frame.pack(side= "top", anchor ="w") 
                         
-                        # declear max_iter parameter
+                        # declare max_iter parameter
                         MLP_max_iter_Frame = tk.Frame(MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame)
                         tk.Label(MLP_max_iter_Frame, text="max_iter:    ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_max_iter = IntVar() 
@@ -19933,7 +19933,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_max_iter.set(200) 
                         MLP_max_iter_Frame.pack(side= "top", anchor ="w")                         
 
-                        # declear beta_1 parameter
+                        # declare beta_1 parameter
                         MLP_beta_1_Frame = tk.Frame(MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame)
                         tk.Label(MLP_beta_1_Frame, text="beta_1:       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_beta_1 = DoubleVar() 
@@ -19941,7 +19941,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_beta_1.set(0.9)
                         MLP_beta_1_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear beta_2 parameter
+                        # declare beta_2 parameter
                         MLP_beta_2_Frame = tk.Frame(MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame)
                         tk.Label(MLP_beta_2_Frame, text="beta_2:       ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_beta_2 = DoubleVar() 
@@ -19949,7 +19949,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_beta_2.set(0.999)
                         MLP_beta_2_Frame.pack(side= "top", anchor ="w") 
 
-                        # declear tol parameter
+                        # declare tol parameter
                         MLP_tol_Frame = tk.Frame(MLP_tol_momentum_max_iter_beta_1_beta_2_tol_Frame)
                         tk.Label(MLP_tol_Frame, text="tol:              ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_tol = DoubleVar() 
@@ -19965,7 +19965,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                         
                         MLP_verbose_and_early_stopping_validation_fraction_epsilon_Frame = tk.Frame(MLPParameters_Frame)
                         
-                        # declear shuffle parameter, bool = default: False
+                        # declare shuffle parameter, bool = default: False
                         MLP_verbose_Frame = tk.Frame(MLP_verbose_and_early_stopping_validation_fraction_epsilon_Frame)
                         tk.Label(MLP_verbose_Frame, text="verbose:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         MLP_verbose = BooleanVar()
@@ -19975,7 +19975,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_verbose_Frame.pack(side="top",anchor ="w")
 
 
-                        # declear early_stopping parameter, bool = default: False
+                        # declare early_stopping parameter, bool = default: False
                         MLP_early_stopping_Frame = tk.Frame(MLP_verbose_and_early_stopping_validation_fraction_epsilon_Frame)
                         tk.Label(MLP_early_stopping_Frame, text="early_stopping:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         MLP_early_stopping = BooleanVar()
@@ -19985,7 +19985,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_early_stopping_Frame.pack(side="top",anchor ="w")
                         
 
-                        # declear validation_fraction parameter
+                        # declare validation_fraction parameter
                         MLP_validation_fraction_Frame = tk.Frame(MLP_verbose_and_early_stopping_validation_fraction_epsilon_Frame)
                         tk.Label(MLP_validation_fraction_Frame, text="validation_fraction:", font=FONT_12, fg = 'SteelBlue3', wraplength=50).pack(side="left",anchor ="c")
                         MLP_validation_fraction = DoubleVar() 
@@ -19994,7 +19994,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_validation_fraction_Frame.pack(side= "top", anchor ="w") 
 
 
-                        # declear epsilon parameter
+                        # declare epsilon parameter
                         MLP_epsilon_Frame = tk.Frame(MLP_verbose_and_early_stopping_validation_fraction_epsilon_Frame)
                         tk.Label(MLP_epsilon_Frame, text="epsilon:  ", font=FONT_12, fg = 'SteelBlue3').pack(side="left",anchor ="c")
                         MLP_epsilon = DoubleVar() 
@@ -20010,7 +20010,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         # frame contains validation_fraction, epsilon and nesterovs_momentum parameters
                         MLP_nesterovs_momentum_shuffle_warm_start_Frame = tk.Frame(MLPParameters_Frame) 
                         
-                        # declear nesterovs_momentum parameter, bool = default: True
+                        # declare nesterovs_momentum parameter, bool = default: True
                         MLP_nesterovs_momentum_Frame = tk.Frame(MLP_nesterovs_momentum_shuffle_warm_start_Frame)
                         tk.Label(MLP_nesterovs_momentum_Frame, text="nesterovs_momentum:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         MLP_nesterovs_momentum = BooleanVar()
@@ -20020,7 +20020,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         MLP_nesterovs_momentum_Frame.pack(side="top",anchor ="w")
 
 
-                        # declear warm_start parameter, bool = default: False
+                        # declare warm_start parameter, bool = default: False
                         MLP_warm_start_Frame = tk.Frame(MLP_nesterovs_momentum_shuffle_warm_start_Frame)
                         tk.Label(MLP_warm_start_Frame, text="warm_start:", font=FONT_12, fg = 'SteelBlue3').pack(anchor="c")
                         MLP_warm_start = BooleanVar()
@@ -20038,7 +20038,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
 
               ###########################################
-                        # declear multi-layer perceptron (MLP) using 
+                        # declare multi-layer perceptron (MLP) using
                         # Backpropagation Classifier Result 
                         MLP_ClassifierEvaluation_MainFrame = tk.Frame(WindowOneCanvasFrame)
                         
