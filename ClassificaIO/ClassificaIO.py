@@ -110,24 +110,8 @@ class ClassificaIO(tk.Tk):
         # tkraise will rais the start window to the front
         frame.tkraise()
                          ###########################                                           
+                                              
 
-                         ###########################                                                   
-    # define function to quit program    
-    def clint_exit(self):
-        # output message and ask user before quiting 
-        quiting = messagebox.askquestion(title="Quit", 
-                                         message="Are you sure you want to "\
-                                         "exit ClassificaIO?")
-        # if user click yes then quit
-        if quiting == "yes" :
-            tk.Tk.destroy(self)
-                         ###########################   
-
-    # define function to call user guide 
-    def user_guide(self):
-        webbrowser.open_new("https://goo.gl/Y9J9tD")                                             
-
-                         ###########################                                                   
     def __init__(self, *args, **kwargs):
         
         
@@ -148,18 +132,6 @@ class ClassificaIO(tk.Tk):
         container_frame.grid_rowconfigure(0, weight=1)
         container_frame.grid_columnconfigure(0, weight=1)
         
-        
-        # Add quit command 
-        MenuBar = tk.Menu(self)
-        self.config(menu= MenuBar)
-
-        file = tk.Menu(MenuBar)
-        file.add_command(label = "Quit", command = self.clint_exit)
-        MenuBar.add_cascade(label = "File", menu = file)
-      
-        UserGuide = tk.Menu(MenuBar)
-        UserGuide.add_command(label = "User guide", command = self.user_guide)
-        MenuBar.add_cascade(label = "Help", menu = UserGuide)
 
 
 
@@ -194,21 +166,21 @@ class ClassificaIO(tk.Tk):
 # one input:
 # command to move to StartWindow (home)
 #==============================================================================
-def NavigationButtons(self, 
-                      home):
+def NavigationButtons(self, home):
     
+    # define function to call user manual 
+    def user_manual():
+        webbrowser.open_new("https://goo.gl/Y9J9tD")  
+        
     # tkinter frame used to add home, backward and forward buttons
     mainframe = tk.Frame(self)
     
-    # home button
-    here=path.abspath(path.dirname(__file__))
-    homePath=path.join(here,"go_home.png")
-    load_image = Image.open(homePath)
-    load_image = load_image.resize((15, 15), Image.ANTIALIAS)
-    render_image = ImageTk.PhotoImage(load_image)
-    home_button = ttk.Button(mainframe, image = render_image, command = home)
-    home_button.image =render_image
-    home_button.pack(side = "left", padx=20)
+    # home button 
+    tk.Button(mainframe, text = "HOME", command = home).pack(side = "left", padx=10)
+    
+    # help button 
+    tk.Button(mainframe, text = "HELP", command = user_manual).pack(side = "left")
+    
     mainframe.pack(padx=42, anchor="w")
 #==============================================================================
 
@@ -226,8 +198,9 @@ def ErrorMessage (arg1_title, arg2_message):
     return messagebox.showwarning(title = arg1_title,
                                   message = arg2_message, 
                                   detail= "\nFor instructions on using this "\
-                                  "program, please refer to \"ClassificaIO "\
-                                  "documentation\" in user manual online")
+                                  "program, please refer to the \"user manual\" "\
+                                  "by clicking the \"Help\" button in the "\
+                                  "menu bar in ClassificaIO")
 #==============================================================================
 
 
@@ -1480,7 +1453,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -2021,9 +1995,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                                 PA_max_iter_Result = None
                             else:
                                 PA_max_iter_Result = PA_max_iter.get() 
-                                
-
-                            
+                                                            
                             # get tol value
                             if PA_tol_int_or_none.get() == "None":
                                 PA_tol_Result = None
@@ -2287,7 +2259,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -3085,7 +3058,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -3860,7 +3834,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -4637,7 +4612,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -5486,7 +5462,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -6178,7 +6155,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -6864,7 +6842,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -7619,7 +7598,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -8406,7 +8386,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -9178,7 +9159,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -9867,7 +9849,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -10536,7 +10519,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -11268,7 +11252,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -11762,10 +11747,10 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             
                             
                             CallClassifier = BernoulliNB(
-                                    alpha = BernoulliNB_alpha_Result,
-                                    fit_prior = BernoulliNB_fit_prior_Result,
-                                    binarize = BernoulliNB_binarize_Result,
-                                    class_prior = None)
+                                                        alpha = BernoulliNB_alpha_Result,
+                                                        fit_prior = BernoulliNB_fit_prior_Result,
+                                                        binarize = BernoulliNB_binarize_Result,
+                                                        class_prior = None)
   
 
                             #######################################                                  
@@ -11983,7 +11968,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -12248,7 +12234,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ttk.Button(BernoulliNB_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = BernoulliNB_SubFunc).pack(anchor="c", pady=5)
                         BernoulliNBSelectedParameters_Frame = tk.Frame(BernoulliNB_ClassifierEvaluation_MainFrame)
                         BernoulliNB_Result = StringVar()
-                        tk.Label(BernoulliNBSelectedParameters_Frame, textvariable = BernoulliNB_Result, wraplength=400).pack(anchor="n")
+                        tk.Label(BernoulliNBSelectedParameters_Frame, textvariable = BernoulliNB_Result, wraplength=800).pack(anchor="n")
                         BernoulliNB_Result.set("")
                         BernoulliNBSelectedParameters_Frame.pack(anchor="c")
                                                 
@@ -12632,7 +12618,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -13253,7 +13240,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -13950,7 +13938,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -14798,7 +14787,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -15592,7 +15582,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -15854,7 +15845,7 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                         ttk.Button(AdaBoost_ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = AdaBoost_SubFunc).pack(anchor="c", pady=5)
                         AdaBoostSelectedParameters_Frame = tk.Frame(AdaBoost_ClassifierEvaluation_MainFrame)
                         AdaBoost_Result = StringVar()
-                        tk.Label(AdaBoostSelectedParameters_Frame, textvariable = AdaBoost_Result, wraplength=700).pack(anchor="n")
+                        tk.Label(AdaBoostSelectedParameters_Frame, textvariable = AdaBoost_Result, wraplength=800).pack(anchor="n")
                         AdaBoost_Result.set("")
                         AdaBoostSelectedParameters_Frame.pack(anchor="c")
 
@@ -16278,7 +16269,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -17088,7 +17080,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -18002,7 +17995,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -18854,7 +18848,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -19610,7 +19605,8 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
                             if DataFile:
                                 ExportModelResult = [CommonFeatures_for_DataTraining,
                                                      CallClassifier,
-                                                     confusion_matrix_accuracy_error_result]
+                                                     confusion_matrix_accuracy_error_result,
+                                                     Classifier_Pramaters]
                                 
                                 joblib.dump(ExportModelResult, DataFile+'.pkl')
                                 
@@ -20528,7 +20524,7 @@ class WindowTwo_Already_Trained_My_Model(tk.Frame):
                 CallClassifier_WindowTwo = AlreadyTrainedModel_joblib[1]
                 
                 # output model parameters for user to see
-                ClassifierParameters_WindowTwo.set("%s %s " % ("classifier:".upper(), CallClassifier_WindowTwo))
+                ClassifierParameters_WindowTwo.set("%s %s " % ("classifier:".upper(), AlreadyTrainedModel_joblib[3]))
     
                 # output confusion matrix, model accuracy & error located at index 2
                 ConfusionMatrixModelAccuracyError_WindowTwo.set(AlreadyTrainedModel_joblib[2])
@@ -20690,16 +20686,10 @@ class WindowTwo_Already_Trained_My_Model(tk.Frame):
                          
         ClassifierEvaluation_MainFrame = tk.Frame(WindowTwoCanvasFrame)
         
-        ttk.Button(ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = ExecuteAlreadyTrainedModel).pack(anchor="c", pady=5)
+        ttk.Button(ClassifierEvaluation_MainFrame, width=8, default='active', text= "Submit", command = ExecuteAlreadyTrainedModel).pack(anchor="c")
 
-        tk.Label(ClassifierEvaluation_MainFrame).pack(pady=25)
-
-        selected_classifier_result_frame = tk.Frame(ClassifierEvaluation_MainFrame)
-        tk.Label(selected_classifier_result_frame, textvariable = ClassifierParameters_WindowTwo, wraplength=1000).pack(anchor="n")
-        selected_classifier_result_frame.pack(anchor="c")
+        tk.Label(ClassifierEvaluation_MainFrame, textvariable = ClassifierParameters_WindowTwo, wraplength=825).pack(anchor="c", pady=50)
         
-    
-        tk.Label(ClassifierEvaluation_MainFrame).pack(anchor="c", pady=35)
 
                     ###########################
                     ###########################        
@@ -20763,12 +20753,11 @@ class WindowTwo_Already_Trained_My_Model(tk.Frame):
         
         output_MainFrame.pack()
         
-        tk.Label(ClassifierEvaluation_MainFrame).pack(pady=47)
         
                     ###########################
                     ###########################
 
-        ClassifierEvaluation_MainFrame.pack(anchor ="c")  
+        ClassifierEvaluation_MainFrame.pack(anchor ="c", pady=60)  
 
 
 
@@ -20794,3 +20783,5 @@ def gui():
     software = ClassificaIO()
     center(software)
     software.mainloop()
+
+

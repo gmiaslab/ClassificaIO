@@ -1,4 +1,9 @@
 #  ClassificaIO Version ChangeLog
+## 1.0.5
+* Changed 'user guide' to 'user manual' in error massage
+* Replaced menu bar with 'HOME' and 'HELP' buttons
+* Added panels to canves rather than frame in the ‘Already Trained My Model’ window
+
 ## 1.0.4
 * SGD classifier parameter typo fix
 
