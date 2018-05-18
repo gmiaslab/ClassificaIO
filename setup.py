@@ -12,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='ClassificaIO',
     packages=find_packages(),
-    version='1.0.5',
+    version='1.1.0',
     description='Graphical User Interface for machine learning classification algorithms from scikit-learn',
     long_description=long_description,
     include_package_data=True,
