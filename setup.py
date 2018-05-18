@@ -20,7 +20,7 @@ setup(
     author_email='gmiaslab@gmail.com',
     license='MIT',
     url='https://github.com/gmiaslab/ClassificaIO',
-    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.0.5.tar.gz',
+    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.1.0.tar.gz',
     keywords=['machine learning', 'classification','bioinformatics'],
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -37,10 +37,10 @@ setup(
         'Topic :: Utilities',
         ],
     install_requires=[
-        'nltk>=3.2.5',
-        'Pillow>=4.3',
-        'pandas>=0.21',
-        'numpy>=1.13',
-        'scikit-learn>=0.19.1'],
+        'Pillow>=5.1.0',
+        'pandas==0.22.0',
+        'numpy>=1.14.3',
+        'scikit-learn>=0.19.1',
+        'scipy>=1.1.0'],
     zip_safe=False
 )

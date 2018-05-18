@@ -1,4 +1,15 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.0
+* Added "EXIT PYTHON" button to quit Python and ClassificaIO and fixed FATAL error.
+* Optimized ClassificaIO for Mac OS X, Linux, and Windows:
+    * Classifiers parameters font type and alignment have been optimized for all three operating systems
+    * ClassificaIO style, theme, and colors been optimized for all three operating systems
+    * Fixed confusion matrix display, data training and testing results
+    * Buttons are more responsive, with dashed outline or color changes once the button has been clicked
+* Scrollbars have been added to all listboxes
+* Implemented reseting of all variables once ClassificaIO is closed and re-launched to eliminate interference of information/results from prior sessions
+
+
 ## 1.0.5
 * Changed 'user guide' to 'user manual' in error massage
 * Replaced menu bar with 'HOME' and 'HELP' buttons

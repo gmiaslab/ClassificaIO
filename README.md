@@ -6,10 +6,12 @@ This repository contains ClassificaIO, a Python package that provides a graphica
 
 ### Recommended Pre-Installation Requirements
 To install ClassificaIO on any platform you need:
-1. A Python distribution - ClassificaIO was built usining Anaconda distribution, python 3.5
+1. A Python distribution - ClassificaIO was built using python 3.6
 
 ### Installation Instructions
-To install the current release use pip
+
+#### 1. Mac or Windows
+To install the current release use pip:
 
 ```bash
 pip install ClassificaIO
@@ -19,6 +21,26 @@ Alternatively, you can install directly from github using:
 ```bash
 pip install git+https://github.com/gmiaslab/ClassificaIO/
 ```
+
+#### 2. Linux
+First install the current release of tkinter and pip:
+
+```bash
+sudo apt-get install python3-tk
+sudo apt-get install python3-pip
+```
+
+To install the current ClassificaIO release use pip:
+
+```bash
+pip3 install ClassificaIO
+```
+Alternatively, you can install directly from github using:
+
+```bash
+pip3 install git+https://github.com/gmiaslab/ClassificaIO/
+```
+
 
 ## B. RUNNING ClassificaIO
 After installation you can run:
@@ -43,4 +65,3 @@ George I. Mias
 * G. Mias Lab (https://georgemias.org)
 * e-mail: gmiaslab@gmail.com
 * twitter: @gmiaslab
-
