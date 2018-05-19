@@ -470,11 +470,11 @@ class StartWindow(tk.Frame):
             StartWindowMainFrame.pack(anchor = "c", padx=537)
 
         elif sys.platform == "win64" or sys.platform == "win32":
-            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=213)
+            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=192)
             StartWindowMainFrame.pack(anchor = "c", padx=540)
 
         else:
-            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=192)
+            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=170)
             StartWindowMainFrame.pack(anchor = "c", padx=546)
 
                          ###########################
@@ -23238,5 +23238,3 @@ def gui():
     center(software)
     software.mainloop()
     clearClassifica()
-
-

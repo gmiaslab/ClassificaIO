@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.1
+* Added space between "main buttons" on upper left of main windown and lab logo
+
 ## 1.1.0
 * Added "EXIT PYTHON" button to quit Python and ClassificaIO and fixed FATAL error.
 * Optimized ClassificaIO for Mac OS X, Linux, and Windows:
