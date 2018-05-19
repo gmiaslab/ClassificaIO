@@ -412,7 +412,7 @@ class StartWindow(tk.Frame):
                          ###########################
         # Add lab logo and ClassificaIO name
         StartWindowMainFrame = tk.Frame(StartWindowCanvasFrame, bg = "white")
-
+        tk.Label(StartWindowMainFrame, bg = "white").pack(pady=10)
         logo_and_ClassificaIO_name_frame = tk.Frame(StartWindowMainFrame, bg = "white")
 
 
@@ -466,7 +466,7 @@ class StartWindow(tk.Frame):
 
 
         if sys.platform == "linux":
-            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=203)
+            tk.Label(StartWindowMainFrame, bg = "white").pack(pady=183)
             StartWindowMainFrame.pack(anchor = "c", padx=537)
 
         elif sys.platform == "win64" or sys.platform == "win32":
