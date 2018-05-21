@@ -7488,9 +7488,12 @@ class WindowOne_Use_My_Own_Training_Data(tk.Frame):
 
                                         # identify the id for each data point
                                         predicted_value = []
-                                        for i, j in zip(list(np.array(OpenTargetDataFile_output_ReadFile_new.index)),predict):
+                                        for i, j in zip(list(np.array(X.index)),predict):
                                             id_acual_predicted = [OpenTargetDataFile_output_ReadFile_new["id"][i],"一",OpenTargetDataFile_output_ReadFile_new["target"][i],"一", j]
                                             predicted_value.append(id_acual_predicted)
+
+
+
 
                                         predicted_value.insert(0, "Total objects predicted: "+str(len(predicted_value)))
                                         predicted_value_result.set(predicted_value)
@@ -23238,3 +23241,5 @@ def gui():
     center(software)
     software.mainloop()
     clearClassifica()
+    
+gui()

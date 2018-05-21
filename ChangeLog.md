@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.2
+* Fixed LinearSVC k-fold cross validation method to report correct ids for each data point.
+
 ## 1.1.1
 * Added space between "main buttons" on upper left of main windown and lab logo
 
