@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.3
+* Fixed code to remove indirect gui call
+
 ## 1.1.2
 * Fixed LinearSVC k-fold cross validation method to report correct ids for each data point.
 

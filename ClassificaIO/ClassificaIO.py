@@ -23241,5 +23241,3 @@ def gui():
     center(software)
     software.mainloop()
     clearClassifica()
-    
-gui()
