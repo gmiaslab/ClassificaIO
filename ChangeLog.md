@@ -1,7 +1,7 @@
 #  ClassificaIO Version ChangeLog
 ## 1.1.5
 * Compatibility with PyPI
-* 
+  
 ## 1.1.4.2
 * Updated scikit-learn>=0.19.1
   
