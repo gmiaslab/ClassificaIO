@@ -39,8 +39,8 @@ setup(
     install_requires=[
         'Pillow>=5.2.0',
         'pandas>=0.23.3',
-        'scikit-learn==0.19.1',
         'numpy==1.14.5',
+        'scikit-learn==0.19.1',
         'scipy>=1.1.0'],
     zip_safe=False
 )
