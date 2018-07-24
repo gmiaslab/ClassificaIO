@@ -12,7 +12,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 setup(
     name='ClassificaIO',
     packages=find_packages(),
-    version='1.1.3',
+    version='1.1.4',
     description='Graphical User Interface for machine learning classification algorithms from scikit-learn',
     long_description=long_description,
     include_package_data=True,
@@ -20,7 +20,7 @@ setup(
     author_email='gmiaslab@gmail.com',
     license='MIT',
     url='https://github.com/gmiaslab/ClassificaIO',
-    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.1.3.tar.gz',
+    download_url='https://github.com/gmiaslab/ClassificaIO/archive/1.1.4.tar.gz',
     keywords=['machine learning', 'classification','bioinformatics'],
     classifiers=[
         'License :: OSI Approved :: MIT License',
@@ -37,10 +37,10 @@ setup(
         'Topic :: Utilities',
         ],
     install_requires=[
-        'Pillow>=5.1.0',
-        'pandas==0.22.0',
-        'numpy>=1.14.3',
-        'scikit-learn>=0.19.1',
+        'Pillow>=5.2.0',
+        'pandas>=0.23.3',
+        'numpy==1.14.5',
+        'scikit-learn>=0.19.2',
         'scipy>=1.1.0'],
     zip_safe=False
 )

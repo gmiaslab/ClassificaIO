@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.4
+* Updated installation requirement in setup.py  
+
 ## 1.1.3
 * Fixed code to remove indirect gui call
 
