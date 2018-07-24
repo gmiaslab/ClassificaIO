@@ -1,4 +1,7 @@
 #  ClassificaIO Version ChangeLog
+## 1.1.4.1
+* Updated scikit-learn to 0.19.1 in setup.py
+  
 ## 1.1.4
 * Updated installation requirement in setup.py  
 
