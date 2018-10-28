@@ -22,8 +22,6 @@ Alternatively, you can install directly from github using:
 pip install git+https://github.com/gmiaslab/ClassificaIO/
 ```
 
-Once run, ClassificaIO’s main window appears on your screen: 
-![1_mainwindow_bmc](https://user-images.githubusercontent.com/39611565/47616405-97b37100-da92-11e8-8165-11ea470d5950.jpg)
 
 #### 2. Linux
 First install the current release of tkinter and pip:
@@ -52,6 +50,11 @@ After installation you can run:
 >>> from ClassificaIO import ClassificaIO
 >>> ClassificaIO.gui()
 ```
+
+Once run, ClassificaIO’s main window appears on your screen: 
+![1_mainwindow_bmc](https://user-images.githubusercontent.com/39611565/47616405-97b37100-da92-11e8-8165-11ea470d5950.jpg)
+
+
 ## C. DOCUMENTATION
 Documentation for ClassificaIO is provided in the manual, available online at:
 * https://github.com/gmiaslab/manuals/blob/master/ClassificaIO/ClassificaIO_UserManual.pdf
