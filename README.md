@@ -9,7 +9,7 @@ To install ClassificaIO on any platform you need:
 * A Python distribution - ClassificaIO was built using python 3.6
 * Pillow>=5.3.0
 * pandas>=0.23.3
-* numpy>=1.15.3'
+* numpy>=1.15.3
 * scikit-learn>=0.20.0
 * scipy>=1.1.0
 
