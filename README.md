@@ -54,6 +54,8 @@ After installation you can run:
 Once run, ClassificaIO’s main window appears on your screen: 
 ![1_mainwindow_bmc](https://user-images.githubusercontent.com/39611565/47616405-97b37100-da92-11e8-8165-11ea470d5950.jpg)
 
+Illustrative example using the Iris dataset: (a) ‘Use My Own Training Data’ window with uploaded training and testing data files, selected logistic regression classifier, populated classifier parameters, and output classification results, (b) ‘Already Trained My Model’ window with uploaded logistic regression ClassificaIO trained model and testing data file, and output result.
+![fig3](https://user-images.githubusercontent.com/39611565/47617792-773ee300-daa1-11e8-8c96-4d1820f7c78a.jpg)
 
 ## C. DOCUMENTATION
 Documentation for ClassificaIO is provided in the manual, available online at:
