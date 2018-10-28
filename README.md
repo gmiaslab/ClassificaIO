@@ -1,12 +1,17 @@
 # ClassificaIO
-This repository contains ClassificaIO, a Python package that provides a graphical user interface (GUI) for machine learning algorithms from scikit-learn.
+This repository contains ClassificaIO, a Python package that provides a graphical user interface (GUI) for machine learning algorithms from scikit-learn. For more information, see the accompanying [research paper](https://www.biorxiv.org/content/early/2017/12/28/240184).
 
 # ClassificaIO Installation Instructions
 ## A. INSTALLATION
 
-### Recommended Pre-Installation Requirements
+### Pre-Installation Requirements & Dependencies
 To install ClassificaIO on any platform you need:
-1. A Python distribution - ClassificaIO was built using python 3.6
+* A Python distribution - ClassificaIO was built using python 3.6
+* Pillow>=5.3.0
+* pandas>=0.23.3
+* numpy>=1.15.3'
+* scikit-learn>=0.20.0
+* scipy>=1.1.0
 
 ### Installation Instructions
 
